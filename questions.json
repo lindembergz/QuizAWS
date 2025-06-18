@@ -1,0 +1,684 @@
+[
+            {
+                "question": "Qual serviço AWS é usado para armazenamento de objetos escalável, como backups e arquivos estáticos?",
+                "options": ["Amazon EC2", "Amazon S3", "AWS Lambda", "Amazon RDS"],
+                "answer": "Amazon S3",
+                "feedback": "Correto! Amazon S3 é ideal para armazenamento de objetos. EC2 é para computação, Lambda para código sem servidor, e RDS para bancos de dados relacionais."
+            },
+            {
+                "question": "Qual serviço AWS fornece servidores virtuais para hospedar aplicações?",
+                "options": ["Amazon S3", "Amazon EC2", "AWS CloudTrail", "Amazon VPC"],
+                "answer": "Amazon EC2",
+                "feedback": "Correto! Amazon EC2 oferece servidores virtuais. S3 é para armazenamento, CloudTrail para auditoria, e VPC para redes virtuais."
+            },
+            {
+                "question": "Qual serviço AWS permite executar código sem gerenciar servidores?",
+                "options": ["Amazon RDS", "AWS Lambda", "Amazon EC2", "AWS KMS"],
+                "answer": "AWS Lambda",
+                "feedback": "Correto! AWS Lambda é um serviço de computação sem servidor. RDS é para bancos relacionais, EC2 para servidores, e KMS para chaves criptográficas."
+            },
+            {
+                "question": "Qual serviço AWS gerencia permissões e acesso para usuários e serviços?",
+                "options": ["AWS IAM", "AWS KMS", "AWS CloudWatch", "Amazon SES"],
+                "answer": "AWS IAM",
+                "feedback": "Correto! AWS IAM gerencia permissões. KMS é para criptografia, CloudWatch para monitoramento, e SES para e-mails."
+            },
+            {
+                "question": "Qual serviço AWS é um banco de dados relacional gerenciado?",
+                "options": ["Amazon DynamoDB", "Amazon RDS", "Amazon Redshift", "Amazon S3"],
+                "answer": "Amazon RDS",
+                "feedback": "Correto! Amazon RDS é um banco relacional gerenciado. DynamoDB é NoSQL, Redshift é data warehouse, e S3 é para armazenamento."
+            },
+            {
+                "question": "Qual serviço AWS monitora métricas e logs de aplicações?",
+                "options": ["AWS CloudTrail", "AWS CloudWatch", "AWS Trusted Advisor", "AWS Budgets"],
+                "answer": "AWS CloudWatch",
+                "feedback": "Correto! AWS CloudWatch monitora métricas e logs. CloudTrail é para auditoria, Trusted Advisor para otimizações, e Budgets para alertas de custo."
+            },
+            {
+                "question": "Qual serviço AWS registra ações na AWS para auditoria de segurança?",
+                "options": ["AWS KMS", "AWS CloudTrail", "AWS IAM", "Amazon VPC"],
+                "answer": "AWS CloudTrail",
+                "feedback": "Correto! AWS CloudTrail registra ações para auditoria. KMS é para criptografia, IAM para permissões, e VPC para redes."
+            },
+            {
+                "question": "Qual serviço AWS gerencia chaves criptográficas para proteger dados?",
+                "options": ["AWS IAM", "AWS KMS", "AWS CloudWatch", "Amazon SES"],
+                "answer": "AWS KMS",
+                "feedback": "Correto! AWS KMS gerencia chaves criptográficas. IAM é para permissões, CloudWatch para monitoramento, e SES para e-mails."
+            },
+            {
+                "question": "Qual serviço AWS analisa e prevê custos ao longo do tempo?",
+                "options": ["AWS Budgets", "AWS Cost Explorer", "AWS Trusted Advisor", "AWS Free Tier"],
+                "answer": "AWS Cost Explorer",
+                "feedback": "Correto! AWS Cost Explorer analisa custos. Budgets define alertas, Trusted Advisor sugere otimizações, e Free Tier oferece recursos gratuitos."
+            },
+            {
+                "question": "Qual serviço AWS define alertas para monitorar gastos?",
+                "options": ["AWS Cost Explorer", "AWS Budgets", "AWS CloudWatch", "AWS Free Tier"],
+                "answer": "AWS Budgets",
+                "feedback": "Correto! AWS Budgets cria alertas de gastos. Cost Explorer analisa custos, CloudWatch monitora métricas, e Free Tier é para recursos gratuitos."
+            },
+            {
+                "question": "O que significa elasticidade na AWS?",
+                "options": ["Gerenciar permissões", "Ajustar recursos automaticamente", "Armazenar objetos", "Monitorar logs"],
+                "answer": "Ajustar recursos automaticamente",
+                "feedback": "Correto! Elasticidade permite ajustar recursos conforme a demanda. Não se refere a permissões, armazenamento ou monitoramento."
+            },
+            {
+                "question": "No modelo de responsabilidade compartilhada, o que a AWS gerencia?",
+                "options": ["Dados do cliente", "Infraestrutura física", "Aplicações do cliente", "Configurações de segurança"],
+                "answer": "Infraestrutura física",
+                "feedback": "Correto! A AWS gerencia a infraestrutura física. O cliente é responsável pelos dados, aplicações e configurações de segurança."
+            },
+            {
+                "question": "Qual serviço AWS cria redes virtuais isoladas?",
+                "options": ["Amazon EC2", "Amazon VPC", "AWS Lambda", "Amazon S3"],
+                "answer": "Amazon VPC",
+                "feedback": "Correto! Amazon VPC cria redes virtuais isoladas. EC2 é para computação, Lambda para código sem servidor, e S3 para armazenamento."
+            },
+            {
+                "question": "Qual serviço AWS é um banco de dados NoSQL gerenciado?",
+                "options": ["Amazon RDS", "Amazon DynamoDB", "Amazon Redshift", "Amazon S3"],
+                "answer": "Amazon DynamoDB",
+                "feedback": "Correto! Amazon DynamoDB é um banco NoSQL. RDS é relacional, Redshift é data warehouse, e S3 é para armazenamento."
+            },
+            {
+                "question": "Qual serviço AWS é uma CDN para entrega de conteúdo com baixa latência?",
+                "options": ["Amazon Route 53", "Amazon CloudFront", "AWS CloudTrail", "Amazon SES"],
+                "answer": "Amazon CloudFront",
+                "feedback": "Correto! Amazon CloudFront é uma CDN. Route 53 é para DNS, CloudTrail para auditoria, e SES para e-mails."
+            },
+            {
+                "question": "Qual serviço AWS é um serviço de DNS escalável?",
+                "options": ["Amazon CloudFront", "Amazon Route 53", "AWS Lambda", "Amazon VPC"],
+                "answer": "Amazon Route 53",
+                "feedback": "Correto! Amazon Route 53 é um serviço de DNS. CloudFront é CDN, Lambda é computação sem servidor, e VPC é para redes."
+            },
+            {
+                "question": "O que é o AWS Free Tier?",
+                "options": ["Serviço de monitoramento", "Recursos gratuitos por 12 meses", "Banco de dados NoSQL", "Serviço de DNS"],
+                "answer": "Recursos gratuitos por 12 meses",
+                "feedback": "Correto! AWS Free Tier oferece recursos gratuitos, como 750 horas de EC2. Não é monitoramento, banco de dados ou DNS."
+            },
+            {
+                "question": "Qual serviço AWS é um data warehouse para análise de dados?",
+                "options": ["Amazon RDS", "Amazon DynamoDB", "AWS Redshift", "Amazon S3"],
+                "answer": "AWS Redshift",
+                "feedback": "Correto! AWS Redshift é um data warehouse. RDS é relacional, DynamoDB é NoSQL, e S3 é para armazenamento."
+            },
+            {
+                "question": "Qual serviço AWS é usado para envio de e-mails transacionais?",
+                "options": ["AWS CloudWatch", "Amazon SES", "AWS KMS", "AWS Budgets"],
+                "answer": "Amazon SES",
+                "feedback": "Correto! Amazon SES é para envio de e-mails. CloudWatch é para monitoramento, KMS para criptografia, e Budgets para alertas de custo."
+            },
+            {
+                "question": "Qual serviço AWS sugere otimizações de custo e segurança?",
+                "options": ["AWS Cost Explorer", "AWS Trusted Advisor", "AWS CloudTrail", "AWS Free Tier"],
+                "answer": "AWS Trusted Advisor",
+                "feedback": "Correto! AWS Trusted Advisor sugere otimizações. Cost Explorer analisa custos, CloudTrail audita ações, e Free Tier oferece recursos gratuitos."
+            },
+            {
+                "question": "Qual é o principal benefício do modelo 'pague conforme o uso' na computação em nuvem?",
+                "options": ["Custos mensais fixos", "Sem investimento inicial, pague apenas pelo que usa", "Disponibilidade de recursos garantida", "Armazenamento ilimitado sem custo"],
+                "answer": "Sem investimento inicial, pague apenas pelo que usa",
+                "feedback": "Correto! O modelo 'pague conforme o uso' permite pagar apenas pelos recursos utilizados, sem custos iniciais. Custos fixos não se aplicam, e armazenamento ilimitado não é garantido."
+            },
+            {
+                "question": "Qual modelo de implantação da AWS seria mais adequado para uma organização que precisa manter dados sensíveis localmente enquanto usa serviços de nuvem?",
+                "options": ["Nuvem pública", "Nuvem privada", "Nuvem híbrida", "Nuvem comunitária"],
+                "answer": "Nuvem híbrida",
+                "feedback": "Correto! A nuvem híbrida combina recursos locais e de nuvem pública, ideal para dados sensíveis. Nuvem pública é totalmente na AWS, privada é local, e comunitária é compartilhada."
+            },
+            {
+                "question": "Qual é a diferença entre uma Região e uma Zona de Disponibilidade no AWS?",
+                "options": ["Regiões são globais, Zonas de Disponibilidade são locais", "Zonas de Disponibilidade são globais, Regiões são locais", "Regiões contêm múltiplas Zonas de Disponibilidade", "Zonas de Disponibilidade são backups de Regiões"],
+                "answer": "Regiões contêm múltiplas Zonas de Disponibilidade",
+                "feedback": "Correto! Regiões são áreas geográficas com várias Zonas de Disponibilidade, que são centros de dados isolados para alta disponibilidade."
+            },
+            {
+                "question": "Qual é um exemplo de Infrastructure as a Service (IaaS) na AWS?",
+                "options": ["Amazon S3", "Amazon EC2", "Amazon RDS", "AWS Lambda"],
+                "answer": "Amazon EC2",
+                "feedback": "Correto! EC2 fornece servidores virtuais (IaaS). S3 é armazenamento, RDS é PaaS (banco gerenciado), e Lambda é serverless."
+            },
+            {
+                "question": "O que é escalabilidade na computação em nuvem?",
+                "options": ["Ajustar recursos automaticamente", "Aumentar capacidade conforme a demanda", "Gerenciar permissões", "Monitorar logs"],
+                "answer": "Aumentar capacidade conforme a demanda",
+                "feedback": "Correto! Escalabilidade permite aumentar ou diminuir recursos conforme a necessidade, diferente de elasticidade (ajuste automático)."
+            },
+            {
+                "question": "No modelo de responsabilidade compartilhada, quem é responsável por gerenciar patches do sistema operacional em uma instância EC2?",
+                "options": ["AWS", "O cliente", "Ambos", "Nenhum"],
+                "answer": "O cliente",
+                "feedback": "Correto! O cliente gerencia o sistema operacional, incluindo patches, enquanto a AWS cuida da infraestrutura física."
+            },
+            {
+                "question": "Qual serviço AWS protege contra ataques DDoS em aplicações web?",
+                "options": ["AWS Shield", "AWS KMS", "AWS Config", "AWS IAM"],
+                "answer": "AWS Shield",
+                "feedback": "Correto! AWS Shield protege contra DDoS. KMS é para criptografia, Config para conformidade, e IAM para permissões."
+            },
+            {
+                "question": "Qual é uma boa prática para aumentar a segurança no AWS IAM?",
+                "options": ["Desativar MFA", "Usar autenticação multifator (MFA)", "Compartilhar credenciais", "Conceder permissões amplas"],
+                "answer": "Usar autenticação multifator (MFA)",
+                "feedback": "Correto! MFA adiciona uma camada de segurança. Desativar MFA, compartilhar credenciais ou permissões amplas são práticas inseguras."
+            },
+            {
+                "question": "Qual serviço AWS ajuda a verificar conformidade com padrões como GDPR e HIPAA?",
+                "options": ["AWS CloudTrail", "AWS Security Hub", "AWS Trusted Advisor", "AWS Budgets"],
+                "answer": "AWS Security Hub",
+                "feedback": "Correto! Security Hub avalia conformidade com padrões como GDPR. CloudTrail audita, Trusted Advisor otimiza, e Budgets gerencia custos."
+            },
+            {
+                "question": "Qual serviço AWS monitora configurações de recursos para conformidade?",
+                "options": ["AWS Config", "AWS CloudWatch", "AWS Shield", "AWS KMS"],
+                "answer": "AWS Config",
+                "feedback": "Correto! AWS Config rastreia configurações para conformidade. CloudWatch monitora métricas, Shield protege DDoS, e KMS gerencia chaves."
+            },
+            {
+                "question": "Qual serviço AWS é usado para implantar aplicações web sem gerenciar servidores?",
+                "options": ["Amazon EC2", "AWS Elastic Beanstalk", "Amazon RDS", "AWS CloudTrail"],
+                "answer": "AWS Elastic Beanstalk",
+                "feedback": "Correto! Elastic Beanstalk é uma plataforma PaaS para implantar aplicações. EC2 requer gerenciamento, RDS é banco, e CloudTrail é auditoria."
+            },
+            {
+                "question": "Qual serviço AWS é usado para transferir grandes quantidades de dados fisicamente?",
+                "options": ["AWS Snowball", "AWS Direct Connect", "Amazon S3", "AWS VPN"],
+                "answer": "AWS Snowball",
+                "feedback": "Correto! Snowball transfere dados fisicamente via dispositivos. Direct Connect é para redes, S3 é armazenamento, e VPN é para conexões seguras."
+            },
+            {
+                "question": "Qual serviço AWS é usado para consultas SQL em dados armazenados no S3?",
+                "options": ["Amazon RDS", "Amazon Athena", "Amazon Redshift", "Amazon DynamoDB"],
+                "answer": "Amazon Athena",
+                "feedback": "Correto! Athena permite consultas SQL no S3. RDS é relacional, Redshift é data warehouse, e DynamoDB é NoSQL."
+            },
+            {
+                "question": "Qual serviço AWS fornece balanceamento de carga para aplicações?",
+                "options": ["Amazon Route 53", "Elastic Load Balancer", "Amazon CloudFront", "AWS Lambda"],
+                "answer": "Elastic Load Balancer",
+                "feedback": "Correto! Elastic Load Balancer distribui tráfego. Route 53 é DNS, CloudFront é CDN, e Lambda é serverless."
+            },
+            {
+                "question": "Qual serviço AWS é usado para migrar bancos de dados para a nuvem?",
+                "options": ["AWS Snowball", "AWS Database Migration Service", "AWS Server Migration Service", "AWS Storage Gateway"],
+                "answer": "AWS Database Migration Service",
+                "feedback": "Correto! Database Migration Service migra bancos. Snowball transfere dados, Server Migration migra servidores, e Storage Gateway conecta armazenamento."
+            },
+            {
+                "question": "Qual serviço AWS fornece um ambiente de desenvolvimento integrado na nuvem?",
+                "options": ["AWS Cloud9", "AWS CodeCommit", "AWS CodeBuild", "AWS CodeDeploy"],
+                "answer": "AWS Cloud9",
+                "feedback": "Correto! Cloud9 é um IDE na nuvem. CodeCommit é repositório, CodeBuild compila, e CodeDeploy implanta código."
+            },
+            {
+                "question": "Qual serviço AWS é usado para orquestrar fluxos de trabalho serverless?",
+                "options": ["AWS Step Functions", "AWS EventBridge", "AWS Lambda", "Amazon SQS"],
+                "answer": "AWS Step Functions",
+                "feedback": "Correto! Step Functions orquestra fluxos serverless. EventBridge gerencia eventos, Lambda executa código, e SQS é fila de mensagens."
+            },
+            {
+                "question": "Qual modelo de preços oferece descontos flexíveis para uso consistente de recursos?",
+                "options": ["On-Demand", "Spot Instances", "Reserved Instances", "Savings Plans"],
+                "answer": "Savings Plans",
+                "feedback": "Correto! Savings Plans oferecem descontos flexíveis para uso consistente. On-Demand é sem compromisso, Spot é para instâncias interrompíveis, e Reserved é para compromissos fixos."
+            },
+            {
+                "question": "Qual plano de suporte AWS oferece suporte 24/7 por telefone e chat?",
+                "options": ["Basic", "Developer", "Business", "Enterprise"],
+                "answer": "Business",
+                "feedback": "Correto! O plano Business inclui suporte 24/7. Basic é limitado, Developer tem suporte por e-mail, e Enterprise inclui um TAM."
+            },
+            {
+                "question": "Qual ferramenta AWS ajuda a visualizar tendências de gastos passados?",
+                "options": ["AWS Budgets", "AWS Cost Explorer", "AWS Trusted Advisor", "AWS Free Tier"],
+                "answer": "AWS Cost Explorer",
+                "feedback": "Correto! Cost Explorer visualiza tendências de gastos. Budgets define alertas, Trusted Advisor otimiza, e Free Tier é para uso gratuito."
+            },
+
+    {
+        "question": "Qual é a definição de computação em nuvem?",
+        "options": [
+            "Um modelo de entrega de serviços de TI que permite o acesso a recursos de computação sob demanda.",
+            "Um método para armazenar dados localmente em servidores físicos.",
+            "Uma técnica para reduzir o uso de energia em data centers.",
+            "Um framework para desenvolver aplicativos móveis."
+        ],
+        "answer": "Um modelo de entrega de serviços de TI que permite o acesso a recursos de computação sob demanda.",
+        "feedback": "Correto! A computação em nuvem é um modelo que permite o acesso sob demanda a recursos de computação compartilhados, como servidores, armazenamento, redes e aplicativos, sem a necessidade de gerenciamento ativo de recursos."
+    },
+    {
+        "question": "Qual é a principal diferença entre IaaS, PaaS e SaaS?",
+        "options": [
+            "IaaS fornece hardware virtualizado, PaaS fornece uma plataforma de desenvolvimento e SaaS fornece aplicativos prontos para uso.",
+            "Todos os três modelos são idênticos, mas com nomes diferentes.",
+            "IaaS é usado apenas para armazenamento, PaaS para computação e SaaS para redes.",
+            "SaaS é o único modelo que suporta escalabilidade."
+        ],
+        "answer": "IaaS fornece hardware virtualizado, PaaS fornece uma plataforma de desenvolvimento e SaaS fornece aplicativos prontos para uso.",
+        "feedback": "Correto! IaaS (Infrastructure as a Service) fornece infraestrutura virtualizada, PaaS (Platform as a Service) oferece uma plataforma para desenvolvimento de aplicativos e SaaS (Software as a Service) entrega aplicativos prontos para uso via internet."
+    },
+    {
+        "question": "Qual é o principal benefício da computação em nuvem para uma empresa?",
+        "options": [
+            "Redução do investimento inicial em hardware.",
+            "Aumento do controle sobre a segurança física dos data centers.",
+            "Limitação da escalabilidade de recursos.",
+            "Cobrança fixa por recursos não utilizados."
+        ],
+        "answer": "Redução do investimento inicial em hardware.",
+        "feedback": "Correto! A computação em nuvem permite que as empresas reduzam os custos iniciais de hardware ao pagar apenas pelos recursos que utilizam, seguindo um modelo de cobrança por uso."
+    },
+    {
+        "question": "O que é o modelo de responsabilidade compartilhada no AWS?",
+        "options": [
+            "O AWS é responsável por toda a segurança da infraestrutura.",
+            "O cliente é responsável por toda a segurança da infraestrutura.",
+            "O AWS é responsável pela segurança da infraestrutura física e o cliente pela segurança lógica.",
+            "Não há responsabilidade compartilhada; cada parte é totalmente independente."
+        ],
+        "answer": "O AWS é responsável pela segurança da infraestrutura física e o cliente pela segurança lógica.",
+        "feedback": "Correto! No modelo de responsabilidade compartilhada do AWS, o provedor de nuvem (AWS) é responsável pela segurança da infraestrutura física e pelo hipervisor, enquanto o cliente é responsável pela segurança lógica, como configurações de rede, dados e aplicativos."
+    },
+    {
+        "question": "Qual dos seguintes não é um pilar do Well-Architected Framework?",
+        "options": [
+            "Excelência Operacional",
+            "Sustentabilidade",
+            "Eficiência de Desempenho",
+            "Escalabilidade"
+        ],
+        "answer": "Escalabilidade",
+        "feedback": "Correto! Os pilares do Well-Architected Framework são: Excelência Operacional, Segurança, Confiabilidade, Eficiência de Desempenho, Otimização de Custos e Sustentabilidade. Escalabilidade não é um pilar específico, embora seja um benefício da nuvem."
+    },
+    {
+        "question": "Uma empresa está considerando migrar para a nuvem. Qual dos seguintes não é um benefício típico da migração para a nuvem?",
+        "options": [
+            "Redução de custos de capital",
+            "Aumento da agilidade no desenvolvimento",
+            "Melhoria na escalabilidade",
+            "Redução da dependência de provedores de nuvem"
+        ],
+        "answer": "Redução da dependência de provedores de nuvem",
+        "feedback": "Correto! A migração para a nuvem geralmente aumenta a dependência do provedor de nuvem, mas oferece benefícios como redução de custos, agilidade e escalabilidade."
+    },
+    {
+        "question": "Qual é o conceito de 'elasticidade' na computação em nuvem?",
+        "options": [
+            "A capacidade de aumentar ou diminuir recursos automaticamente com base na demanda.",
+            "A capacidade de armazenar dados em vários data centers.",
+            "A capacidade de gerenciar redes virtuais.",
+            "A capacidade de desenvolver aplicativos sem código."
+        ],
+        "answer": "A capacidade de aumentar ou diminuir recursos automaticamente com base na demanda.",
+        "feedback": "Correto! Elasticidade refere-se à capacidade de ajustar automaticamente os recursos de computação com base na demanda, permitindo que os usuários paguem apenas pelo que usam."
+    },
+    {
+        "question": "O que é um 'região' no AWS?",
+        "options": [
+            "Uma área geográfica que contém dois ou mais Availability Zones.",
+            "Um único data center.",
+            "Uma rede virtual para isolamento de recursos.",
+            "Um serviço de armazenamento de objetos."
+        ],
+        "answer": "Uma área geográfica que contém dois ou mais Availability Zones.",
+        "feedback": "Correto! Uma região no AWS é uma área geográfica que contém dois ou mais Availability Zones, cada uma sendo um data center isolado, mas conectado por redes de baixa latência."
+    },
+    {
+        "question": "Qual é o principal objetivo do pilar de 'Confiabilidade' no Well-Architected Framework?",
+        "options": [
+            "Garantir que os sistemas sejam escaláveis.",
+            "Garantir que os sistemas sejam seguros.",
+            "Garantir que os sistemas sejam altamente disponíveis e resilientes.",
+            "Garantir que os sistemas sejam economicamente eficientes."
+        ],
+        "answer": "Garantir que os sistemas sejam altamente disponíveis e resilientes.",
+        "feedback": "Correto! O pilar de Confiabilidade foca em projetar sistemas que sejam altamente disponíveis, resilientes e capazes de se recuperar rapidamente de falhas."
+    },
+    {
+        "question": "Qual é o conceito de 'multitenancy' na computação em nuvem?",
+        "options": [
+            "Vários clientes compartilhando os mesmos recursos físicos.",
+            "Um cliente utilizando vários serviços de nuvem.",
+            "Um serviço de nuvem sendo executado em vários data centers.",
+            "Um cliente gerenciando vários ambientes de nuvem."
+        ],
+        "answer": "Vários clientes compartilhando os mesmos recursos físicos.",
+        "feedback": "Correto! Multitenancy refere-se à capacidade de vários clientes (ou 'inquilinos') compartilharem os mesmos recursos físicos ou virtuais em um ambiente de nuvem."
+    },
+    {
+        "question": "Qual serviço do AWS é usado para gerenciar o acesso e permissões para recursos do AWS?",
+        "options": [
+            "Amazon S3",
+            "Amazon EC2",
+            "AWS Identity and Access Management (IAM)",
+            "Amazon VPC"
+        ],
+        "answer": "AWS Identity and Access Management (IAM)",
+        "feedback": "Correto! O AWS IAM é usado para gerenciar usuários, grupos, políticas e papéis, permitindo o controle de acesso a recursos do AWS."
+    },
+    {
+        "question": "Qual das seguintes é uma prática recomendada para segurança em nuvem?",
+        "options": [
+            "Usar senhas padrão para todos os usuários.",
+            "Habilitar o acesso root para todos os membros da equipe.",
+            "Utilizar criptografia para dados em trânsito e em repouso.",
+            "Desabilitar logs de segurança para reduzir custos."
+        ],
+        "answer": "Utilizar criptografia para dados em trânsito e em repouso.",
+        "feedback": "Correto! A criptografia de dados em trânsito e em repouso é uma prática recomendada para proteger dados sensíveis em nuvem."
+    },
+    {
+        "question": "O que é um 'grupo de segurança' no AWS?",
+        "options": [
+            "Um conjunto de regras que controla o tráfego de rede para instâncias EC2.",
+            "Um serviço para gerenciar políticas de conformidade.",
+            "Um recurso para armazenar chaves de criptografia.",
+            "Um grupo de usuários no IAM."
+        ],
+        "answer": "Um conjunto de regras que controla o tráfego de rede para instâncias EC2.",
+        "feedback": "Correto! Grupos de segurança são firewalls virtuais que controlam o tráfego de rede para instâncias EC2 e outros recursos na VPC."
+    },
+    {
+        "question": "Qual é o propósito do serviço AWS Artifact?",
+        "options": [
+            "Gerenciar backups de dados.",
+            "Fornecer relatórios de conformidade e segurança.",
+            "Criar artefatos de build para aplicativos.",
+            "Gerenciar políticas de segurança."
+        ],
+        "answer": "Fornecer relatórios de conformidade e segurança.",
+        "feedback": "Correto! O AWS Artifact fornece relatórios de conformidade e segurança para ajudar os clientes a atender aos requisitos regulatórios."
+    },
+    {
+        "question": "Uma empresa precisa garantir que seus dados em repouso estejam criptografados. Qual serviço do AWS pode ser usado para isso?",
+        "options": [
+            "Amazon S3",
+            "Amazon EC2",
+            "AWS Key Management Service (KMS)",
+            "Amazon VPC"
+        ],
+        "answer": "AWS Key Management Service (KMS)",
+        "feedback": "Correto! O AWS KMS é usado para criar e gerenciar chaves de criptografia que podem ser usadas para proteger dados em repouso e em trânsito."
+    },
+    {
+        "question": "Qual das seguintes é uma certificação de conformidade que o AWS suporta?",
+        "options": [
+            "ISO 9000",
+            "PCI DSS",
+            "GDPR",
+            "HIPAA"
+        ],
+        "answer": "PCI DSS",
+        "feedback": "Correto! O AWS suporta várias certificações de conformidade, incluindo PCI DSS, HIPAA e GDPR, mas PCI DSS é uma das mais comuns para pagamentos."
+    },
+    {
+        "question": "O que é o 'princípio do menor privilégio' na segurança da nuvem?",
+        "options": [
+            "Conceder aos usuários o máximo de privilégios possível.",
+            "Conceder aos usuários apenas os privilégios necessários para realizar suas tarefas.",
+            "Conceder privilégios baseados no cargo do usuário.",
+            "Conceder privilégios temporários que expiram automaticamente."
+        ],
+        "answer": "Conceder aos usuários apenas os privilégios necessários para realizar suas tarefas.",
+        "feedback": "Correto! O princípio do menor privilégio significa conceder aos usuários ou sistemas apenas os privilégios mínimos necessários para realizar suas funções."
+    },
+    {
+        "question": "Qual é o papel do 'root user' no AWS?",
+        "options": [
+            "Um usuário com privilégios administrativos completos.",
+            "Um usuário padrão para todos os serviços do AWS.",
+            "Um usuário usado apenas para testes.",
+            "Um usuário que não pode ser modificado."
+        ],
+        "answer": "Um usuário com privilégios administrativos completos.",
+        "feedback": "Correto! O root user é o usuário com privilégios administrativos completos no AWS, mas é recomendado usá-lo apenas para configurações iniciais e criar usuários adicionais com privilégios limitados."
+    },
+    {
+        "question": "Qual serviço do AWS é usado para monitorar atividades de segurança?",
+        "options": [
+            "Amazon GuardDuty",
+            "Amazon Inspector",
+            "AWS CloudTrail",
+            "AWS WAF"
+        ],
+        "answer": "AWS CloudTrail",
+        "feedback": "Correto! O AWS CloudTrail é usado para registrar atividades de API e fornecer logs de auditoria para monitoramento de segurança."
+    },
+    {
+        "question": "Uma empresa precisa garantir que seus dados estejam armazenados em uma região específica por razões de conformidade. Qual serviço do AWS ajuda com isso?",
+        "options": [
+            "Amazon S3",
+            "Amazon EC2",
+            "AWS Organizations",
+            "AWS Config"
+        ],
+        "answer": "Amazon S3",
+        "feedback": "Correto! O Amazon S3 permite que os usuários escolham a região onde os dados são armazenados, ajudando a atender requisitos de conformidade."
+    },
+    {
+        "question": "O que é um 'ponto de extremidade privado' no AWS?",
+        "options": [
+            "Um endpoint que permite o acesso seguro a serviços do AWS sem a internet pública.",
+            "Um endpoint para conexão direta com o on-premises.",
+            "Um endpoint para gerenciar tráfego de rede.",
+            "Um endpoint para armazenamento de dados."
+        ],
+        "answer": "Um endpoint que permite o acesso seguro a serviços do AWS sem a internet pública.",
+        "feedback": "Correto! Pontos de extremidade privados permitem que os usuários acessem serviços do AWS (como S3) de forma segura dentro de uma VPC, sem expor os recursos à internet pública."
+    },
+    {
+        "question": "Qual é o objetivo do pilar de 'Segurança' no Well-Architected Framework?",
+        "options": [
+            "Garantir que os sistemas sejam escaláveis.",
+            "Garantir que os sistemas sejam altamente disponíveis.",
+            "Garantir que os sistemas protejam informações, sistemas e ativos.",
+            "Garantir que os sistemas sejam economicamente eficientes."
+        ],
+        "answer": "Garantir que os sistemas protejam informações, sistemas e ativos.",
+        "feedback": "Correto! O pilar de Segurança foca em proteger informações, sistemas e ativos por meio de avaliações de risco e estratégias de mitigação."
+    },
+    {
+        "question": "Qual é o serviço do AWS para armazenamento de objetos?",
+        "options": [
+            "Amazon EBS",
+            "Amazon S3",
+            "Amazon RDS",
+            "Amazon DynamoDB"
+        ],
+        "answer": "Amazon S3",
+        "feedback": "Correto! O Amazon S3 é um serviço de armazenamento de objetos escalável, durável e seguro."
+    },
+    {
+        "question": "Qual é o serviço do AWS para computação em nuvem?",
+        "options": [
+            "Amazon S3",
+            "Amazon EC2",
+            "Amazon RDS",
+            "Amazon DynamoDB"
+        ],
+        "answer": "Amazon EC2",
+        "feedback": "Correto! O Amazon EC2 é um serviço de computação em nuvem que permite dimensionar servidores e executar aplicativos em uma infraestrutura virtual."
+    },
+    {
+        "question": "Uma empresa precisa armazenar dados relacionais em uma base de dados gerenciada. Qual serviço do AWS deve ser usado?",
+        "options": [
+            "Amazon DynamoDB",
+            "Amazon Redshift",
+            "Amazon RDS",
+            "Amazon Aurora"
+        ],
+        "answer": "Amazon RDS",
+        "feedback": "Correto! O Amazon RDS é um serviço de banco de dados relacional gerenciado que suporta vários motores de banco de dados, como MySQL, PostgreSQL e Oracle."
+    },
+    {
+        "question": "Qual é o serviço do AWS para rede virtual?",
+        "options": [
+            "Amazon VPC",
+            "Amazon Route 53",
+            "Amazon API Gateway",
+            "Amazon CloudFront"
+        ],
+        "answer": "Amazon VPC",
+        "feedback": "Correto! O Amazon VPC permite criar uma rede virtual dedicada com total controle sobre o ambiente de rede, incluindo sub-redes, gateways e roteamento."
+    },
+    {
+        "question": "Uma empresa deseja executar funções sem servidor em resposta a eventos. Qual serviço do AWS deve ser usado?",
+        "options": [
+            "Amazon EC2",
+            "Amazon Lambda",
+            "Amazon ECS",
+            "Amazon EKS"
+        ],
+        "answer": "Amazon Lambda",
+        "feedback": "Correto! O Amazon Lambda permite executar código sem provisionar ou gerenciar servidores, ideal para funções sem servidor acionadas por eventos."
+    },
+    {
+        "question": "Qual é o serviço do AWS para entrega de conteúdo com baixa latência globalmente?",
+        "options": [
+            "Amazon S3",
+            "Amazon CloudFront",
+            "Amazon Route 53",
+            "Amazon Elastic Load Balancing"
+        ],
+        "answer": "Amazon CloudFront",
+        "feedback": "Correto! O Amazon CloudFront é uma rede de entrega de conteúdo (CDN) que entrega dados, vídeos, aplicativos e APIs com baixa latência e alta velocidade globalmente."
+    },
+    {
+        "question": "Uma empresa precisa analisar grandes volumes de dados em tempo real. Qual serviço do AWS é adequado para isso?",
+        "options": [
+            "Amazon Redshift",
+            "Amazon Kinesis",
+            "Amazon Athena",
+            "Amazon DynamoDB"
+        ],
+        "answer": "Amazon Kinesis",
+        "feedback": "Correto! O Amazon Kinesis é um serviço para ingestão, processamento e análise de dados em tempo real, ideal para aplicações de streaming."
+    },
+    {
+        "question": "Qual é o serviço do AWS para balanceamento de carga?",
+        "options": [
+            "Amazon Route 53",
+            "Amazon API Gateway",
+            "Amazon Elastic Load Balancing",
+            "Amazon CloudFront"
+        ],
+        "answer": "Amazon Elastic Load Balancing",
+        "feedback": "Correto! O Amazon Elastic Load Balancing distribui o tráfego de entrada automaticamente entre múltiplas instâncias EC2 para garantir alta disponibilidade e escalabilidade."
+    },
+    {
+        "question": "Uma empresa deseja armazenar dados não relacionais em uma base de dados NoSQL. Qual serviço do AWS deve ser usado?",
+        "options": [
+            "Amazon RDS",
+            "Amazon DynamoDB",
+            "Amazon Redshift",
+            "Amazon Aurora"
+        ],
+        "answer": "Amazon DynamoDB",
+        "feedback": "Correto! O Amazon DynamoDB é um banco de dados NoSQL totalmente gerenciado que suporta dados não relacionais com escalabilidade e desempenho consistentes."
+    },
+    {
+        "question": "Qual é o serviço do AWS para gerenciar containers?",
+        "options": [
+            "Amazon EC2",
+            "Amazon ECS",
+            "Amazon Lambda",
+            "Amazon EKS"
+        ],
+        "answer": ["Amazon ECS", "Amazon EKS"],
+        "feedback": "Correto! O Amazon ECS é para gerenciar containers de forma nativa, enquanto o Amazon EKS é para gerenciar clusters Kubernetes."
+    },
+    {
+        "question": "Uma empresa precisa executar consultas SQL em dados armazenados no Amazon S3 sem carregá-los em um banco de dados tradicional. Qual serviço deve ser usado?",
+        "options": [
+            "Amazon Redshift",
+            "Amazon Athena",
+            "Amazon DynamoDB",
+            "Amazon Elasticsearch"
+        ],
+        "answer": "Amazon Athena",
+        "feedback": "Correto! O Amazon Athena permite executar consultas SQL diretamente em dados armazenados no S3, sem a necessidade de carregá-los em um banco de dados."
+    },
+    {
+        "question": "Qual é o serviço do AWS para gerenciar grandes volumes de logs e dados de monitoramento?",
+        "options": [
+            "Amazon CloudWatch",
+            "Amazon Kinesis",
+            "Amazon S3",
+            "Amazon Redshift"
+        ],
+        "answer": "Amazon CloudWatch",
+        "feedback": "Correto! O Amazon CloudWatch é usado para monitorar e gerenciar logs, métricas e eventos em tempo real."
+    },
+    {
+        "question": "Uma empresa deseja implantar um aplicativo web com alta disponibilidade. Qual combinação de serviços deve ser usada?",
+        "options": [
+            "Amazon S3 + Amazon EC2",
+            "Amazon EC2 + Amazon Elastic Load Balancing + Amazon Route 53",
+            "Amazon RDS + Amazon DynamoDB",
+            "Amazon Lambda + Amazon API Gateway"
+        ],
+        "answer": "Amazon EC2 + Amazon Elastic Load Balancing + Amazon Route 53",
+        "feedback": "Correto! O Amazon EC2 para computação, Elastic Load Balancing para distribuir tráfego e Route 53 para DNS garantem alta disponibilidade."
+    },
+    {
+        "question": "Qual é o objetivo do pilar de 'Eficiência de Desempenho' no Well-Architected Framework?",
+        "options": [
+            "Garantir que os sistemas sejam escaláveis.",
+            "Garantir que os sistemas sejam seguros.",
+            "Garantir que os sistemas usem recursos de forma eficiente.",
+            "Garantir que os sistemas sejam altamente disponíveis."
+        ],
+        "answer": "Garantir que os sistemas usem recursos de forma eficiente.",
+        "feedback": "Correto! O pilar de Eficiência de Desempenho foca em usar recursos de forma eficiente para atender às demandas de desempenho."
+    },
+    {
+        "question": "Como o AWS cobra pelo uso de serviços como EC2 e S3?",
+        "options": [
+            "Cobrança fixa mensal",
+            "Cobrança por uso (pay-as-you-go)",
+            "Cobrança anual",
+            "Cobrança por assinatura"
+        ],
+        "answer": "Cobrança por uso (pay-as-you-go)",
+        "feedback": "Correto! O AWS usa um modelo de cobrança por uso, onde os clientes pagam apenas pelos recursos que consomem."
+    },
+    {
+        "question": "Qual é o principal benefício de usar Instâncias Reservadas no EC2?",
+        "options": [
+            "Alta disponibilidade",
+            "Escalabilidade automática",
+            "Redução de custos em até 75% em comparação com On-Demand",
+            "Suporte 24/7"
+        ],
+        "answer": "Redução de custos em até 75% em comparação com On-Demand",
+        "feedback": "Correto! As Instâncias Reservadas oferecem descontos significativos em comparação com as instâncias On-Demand, desde que o cliente comprometa-se a usar os recursos por um período definido."
+    },
+    {
+        "question": "Qual ferramenta do AWS ajuda a identificar recursos subutilizados para otimizar custos?",
+        "options": [
+            "AWS Trusted Advisor",
+            "Amazon CloudWatch",
+            "AWS Cost Explorer",
+            "AWS Budgets"
+        ],
+        "answer": "AWS Trusted Advisor",
+        "feedback": "Correto! O AWS Trusted Advisor fornece recomendações para otimizar custos, incluindo a identificação de recursos subutilizados."
+    },
+    {
+        "question": "Uma empresa deseja definir limites de gastos para evitar custos excessivos. Qual serviço do AWS deve ser usado?",
+        "options": [
+            "AWS Cost Explorer",
+            "AWS Budgets",
+            "AWS Trusted Advisor",
+            "Amazon CloudWatch"
+        ],
+        "answer": "AWS Budgets",
+        "feedback": "Correto! O AWS Budgets permite definir limites de gastos e receber alertas quando os limites são atingidos."
+    }
+
+        ]

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.draggable { cursor: move; }
+.dropzone { border: 2px dashed #ccc; min-height: 100px; }
+.dropzone.correct { border-color: green; }
+.dropzone.incorrect { border-color: red; }
