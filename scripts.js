@@ -6,20 +6,17 @@ let questions = [];
 
 async function loadQuestions() {
     try {
+
+        const countQuestionss= 100;
         const response = await fetch('questions.json');
         if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
         let allQuestions = await response.json();
 
-        // Verifica se há pelo menos 80 perguntas
-        if (allQuestions.length < 80) {
-            throw new Error('O arquivo JSON contém menos de 80 perguntas');
-        }
-
         // Embaralha e seleciona 40 perguntas
-        questions = shuffleArray(allQuestions).slice(0, 40);
+        questions = shuffleArray(allQuestions).slice(0, countQuestionss);
         
         // Verifica se 40 perguntas foram selecionadas
-        if (questions.length !== 40) {
+        if (questions.length !== countQuestionss) {
             throw new Error('Erro ao selecionar 40 perguntas');
         }
 
@@ -71,6 +68,7 @@ function updateProgressBar() {
 
 function loadQuestion() {
     if (currentQuestionIndex >= questions.length) {
+        alert("acabou")
         showResult();
         return;
     }
@@ -128,11 +126,12 @@ function handleAnswer(selected) {
 }
 
 function showResult() {
-    document.querySelector('.quiz-container').style.display = 'none';
     resultEl.style.display = 'block';
-    finalScoreEl.textContent = `Pontuação Final: ${totalCorrect} de ${questions.length}`;
-    correctIncorrectEl.textContent = `Acertos: ${totalCorrect}, Erros: ${questions.length - totalCorrect}`;
-    studyTipsEl.textContent = totalCorrect >= questions.length * 0.7 ? "Ótimo trabalho! Você está bem preparado para o exame." : "Bom esforço! Revise os conceitos que errou.";
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('final-score').textContent = `Você acertou ${totalCorrect} de ${questions.length} perguntas.`;
+    document.getElementById('correct-incorrect').textContent = `Acertos: ${totalCorrect} | Erros: ${questions.length - totalCorrect}`;
+    document.getElementById('study-tips').textContent = 'Dica: Revise os tópicos em que errou para melhorar seu desempenho!';
+
 }
 
 nextBtn.onclick = () => {
@@ -140,15 +139,19 @@ nextBtn.onclick = () => {
     loadQuestion();
 };
 
-restartBtn.onclick = () => {
+function resetQuiz() {
     totalCorrect = 0;
     currentQuestionIndex = 0;
     correctStreak = 0;
     incorrectStreak = 0;
     scoreEl.textContent = totalCorrect;
-    document.querySelector('.quiz-container').style.display = 'block';
     resultEl.style.display = 'none';
-    
-};
+    document.querySelector('.quiz-container').style.display = 'block';
+    progressBar.style.width = '0%';
+    progressBar.textContent = '0%';
+    loadQuestions();
+}
+
+restartBtn.onclick = resetQuiz;
 
 loadQuestions();
