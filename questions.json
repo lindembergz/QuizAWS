@@ -3125,5 +3125,1215 @@
         ],
         "answer": "AWS Artifact",
         "feedback": "Correto! AWS Artifact oferece documentos de conformidade e certificações."
+    },
+    {
+        "question": "Uma empresa precisa implementar controles de acesso granulares para diferentes equipes acessarem recursos específicos da AWS. Qual serviço é mais adequado?",
+        "options": [
+            "AWS Organizations",
+            "AWS IAM",
+            "AWS Config",
+            "AWS Control Tower"
+        ],
+        "answer": "AWS IAM",
+        "feedback": "Correto! AWS IAM (Identity and Access Management) permite criar usuários, grupos, roles e políticas para controle de acesso granular aos recursos AWS."
+    },
+    {
+        "question": "No contexto do AWS Cloud Adoption Framework (CAF), qual perspectiva foca em garantir que a organização tenha as habilidades e processos necessários para operar na nuvem?",
+        "options": [
+            "Business Perspective",
+            "People Perspective",
+            "Governance Perspective",
+            "Platform Perspective"
+        ],
+        "answer": "People Perspective",
+        "feedback": "Correto! A People Perspective do AWS CAF foca no desenvolvimento de habilidades, mudança organizacional e gestão de pessoas para a adoção da nuvem."
+    },
+    {
+        "question": "Uma startup precisa monitorar custos e receber alertas quando os gastos ultrapassarem um limite. Qual combinação de serviços é mais apropriada?",
+        "options": [
+            "AWS Cost Explorer + AWS Budgets",
+            "AWS CloudWatch + AWS Config",
+            "AWS Trusted Advisor + AWS Shield",
+            "AWS CloudTrail + AWS Inspector"
+        ],
+        "answer": "AWS Cost Explorer + AWS Budgets",
+        "feedback": "Correto! AWS Cost Explorer analisa custos históricos e AWS Budgets permite definir limites e alertas para controle de gastos."
+    },
+    {
+        "question": "Qual pilar do AWS Well-Architected Framework está diretamente relacionado à sustentabilidade técnica e otimização de recursos?",
+        "options": [
+            "Security",
+            "Reliability",
+            "Cost Optimization",
+            "Sustainability"
+        ],
+        "answer": "Sustainability",
+        "feedback": "Correto! O pilar Sustainability do Well-Architected Framework foca em minimizar o impacto ambiental dos workloads na nuvem através de otimização de recursos."
+    },
+    {
+        "question": "Uma empresa multinacional precisa garantir que dados sensíveis permaneçam em regiões específicas devido a regulamentações locais. Qual conceito da AWS é fundamental para isso?",
+        "options": [
+            "Availability Zones",
+            "Edge Locations",
+            "Data Residency",
+            "Local Zones"
+        ],
+        "answer": "Data Residency",
+        "feedback": "Correto! Data Residency refere-se ao controle sobre onde os dados são armazenados geograficamente, crucial para conformidade regulatória."
+    },
+    {
+        "question": "No AWS CAF, qual perspectiva se concentra em garantir que as práticas de governança e gestão de riscos estejam alinhadas com os objetivos de negócio?",
+        "options": [
+            "Platform Perspective",
+            "Security Perspective",
+            "Governance Perspective",
+            "Operations Perspective"
+        ],
+        "answer": "Governance Perspective",
+        "feedback": "Correto! A Governance Perspective do AWS CAF foca em alinhar estratégias de TI com objetivos de negócio e garantir governança adequada."
+    },
+    {
+        "question": "Uma empresa quer implementar uma estratégia de backup automatizada com retenção de longo prazo de forma econômica. Qual serviço é mais adequado?",
+        "options": [
+            "Amazon S3 Standard",
+            "Amazon S3 Glacier",
+            "Amazon EBS Snapshots",
+            "AWS Storage Gateway"
+        ],
+        "answer": "Amazon S3 Glacier",
+        "feedback": "Correto! Amazon S3 Glacier é ideal para arquivamento de longo prazo com baixo custo, perfeito para estratégias de backup econômicas."
+    },
+    {
+        "question": "Qual serviço AWS ajuda a implementar governança em múltiplas contas AWS através de políticas centralizadas?",
+        "options": [
+            "AWS Organizations",
+            "AWS IAM",
+            "AWS Config",
+            "AWS CloudFormation"
+        ],
+        "answer": "AWS Organizations",
+        "feedback": "Correto! AWS Organizations permite gerenciar múltiplas contas AWS centralizadamente, implementando políticas de governança e controle de custos."
+    },
+    {
+        "question": "Uma aplicação web precisa ser altamente disponível e tolerar falhas de zona de disponibilidade. Qual estratégia de deployment é recomendada?",
+        "options": [
+            "Single AZ deployment",
+            "Multi-AZ deployment",
+            "Single Region deployment",
+            "Edge deployment"
+        ],
+        "answer": "Multi-AZ deployment",
+        "feedback": "Correto! Multi-AZ deployment distribui recursos entre múltiplas Availability Zones, garantindo alta disponibilidade e tolerância a falhas."
+    },
+    {
+        "question": "No contexto de sustentabilidade, qual prática AWS ajuda a reduzir o consumo energético de workloads?",
+        "options": [
+            "Over-provisioning de recursos",
+            "Right-sizing de instâncias",
+            "Usar apenas instâncias grandes",
+            "Manter recursos ativos 24/7"
+        ],
+        "answer": "Right-sizing de instâncias",
+        "feedback": "Correto! Right-sizing envolve escolher o tamanho adequado de instâncias para workloads, otimizando recursos e reduzindo consumo energético."
+    },
+    {
+        "question": "Uma empresa precisa auditar todas as ações realizadas em sua conta AWS. Qual serviço fornece logs detalhados de API calls?",
+        "options": [
+            "AWS Config",
+            "AWS CloudTrail",
+            "AWS CloudWatch",
+            "AWS Inspector"
+        ],
+        "answer": "AWS CloudTrail",
+        "feedback": "Correto! AWS CloudTrail registra todas as chamadas de API feitas na conta AWS, fornecendo trilha de auditoria completa."
+    },
+    {
+        "question": "Qual das seguintes opções representa uma prática de sustentabilidade técnica na AWS?",
+        "options": [
+            "Usar instâncias com tecnologia mais antiga",
+            "Implementar auto-scaling para otimizar recursos",
+            "Manter todos os recursos em uma única região",
+            "Evitar o uso de serviços gerenciados"
+        ],
+        "answer": "Implementar auto-scaling para otimizar recursos",
+        "feedback": "Correto! Auto-scaling ajusta automaticamente a capacidade baseada na demanda, otimizando o uso de recursos e reduzindo desperdício."
+    },
+    {
+        "question": "No AWS CAF, qual perspectiva se concentra na arquitetura, padrões e ferramentas para implementar soluções na nuvem?",
+        "options": [
+            "Business Perspective",
+            "Platform Perspective",
+            "Security Perspective",
+            "Operations Perspective"
+        ],
+        "answer": "Platform Perspective",
+        "feedback": "Correto! A Platform Perspective do AWS CAF foca na arquitetura de referência, padrões de design e seleção de serviços para implementação."
+    },
+    {
+        "question": "Uma empresa precisa garantir conformidade com regulamentações como SOC, PCI DSS e ISO. Onde pode encontrar documentos de compliance da AWS?",
+        "options": [
+            "AWS Config",
+            "AWS Artifact",
+            "AWS Shield",
+            "AWS Inspector"
+        ],
+        "answer": "AWS Artifact",
+        "feedback": "Correto! AWS Artifact fornece acesso sob demanda a relatórios de conformidade e acordos de segurança da AWS."
+    },
+    {
+        "question": "Qual estratégia de migração do AWS CAF envolve mover aplicações para a nuvem com modificações mínimas?",
+        "options": [
+            "Rehost (Lift and Shift)",
+            "Replatform",
+            "Refactor",
+            "Rebuild"
+        ],
+        "answer": "Rehost (Lift and Shift)",
+        "feedback": "Correto! Rehost ou 'Lift and Shift' move aplicações para a nuvem com mudanças mínimas, sendo a estratégia mais rápida de migração."
+    },
+    {
+        "question": "Uma empresa quer implementar controles preventivos para evitar que recursos sejam criados em regiões não aprovadas. Qual serviço é mais adequado?",
+        "options": [
+            "AWS Config",
+            "Service Control Policies (SCPs)",
+            "AWS CloudTrail",
+            "AWS Inspector"
+        ],
+        "answer": "Service Control Policies (SCPs)",
+        "feedback": "Correto! Service Control Policies (SCPs) do AWS Organizations permitem implementar controles preventivos, restringindo ações em contas AWS."
+    },
+    {
+        "question": "Qual métrica é fundamental para medir a sustentabilidade de workloads na AWS?",
+        "options": [
+            "Apenas o custo total",
+            "Carbon footprint por transação",
+            "Número de instâncias utilizadas",
+            "Latência de rede"
+        ],
+        "answer": "Carbon footprint por transação",
+        "feedback": "Correto! Medir a pegada de carbono por unidade de trabalho útil (como transações) é fundamental para avaliar a sustentabilidade dos workloads."
+    },
+    {
+        "question": "Uma startup precisa de um ambiente de desenvolvimento que seja rapidamente provisionado e desprovisionado. Qual abordagem é mais econômica?",
+        "options": [
+            "Instâncias Reserved",
+            "Instâncias Spot",
+            "Instâncias On-Demand",
+            "Dedicated Hosts"
+        ],
+        "answer": "Instâncias Spot",
+        "feedback": "Correto! Instâncias Spot oferecem até 90% de desconto e são ideais para workloads flexíveis como ambientes de desenvolvimento."
+    },
+    {
+        "question": "No contexto do AWS CAF, qual é o objetivo principal da fase 'Envision'?",
+        "options": [
+            "Implementar soluções na nuvem",
+            "Definir a visão e estratégia de transformação",
+            "Migrar aplicações existentes",
+            "Operar workloads na nuvem"
+        ],
+        "answer": "Definir a visão e estratégia de transformação",
+        "feedback": "Correto! A fase 'Envision' do AWS CAF foca em articular a visão de transformação digital e alinhar stakeholders."
+    },
+    {
+        "question": "Uma empresa precisa monitorar mudanças de configuração em recursos AWS e receber alertas sobre alterações não conformes. Qual serviço é mais adequado?",
+        "options": [
+            "AWS CloudTrail",
+            "AWS Config",
+            "AWS CloudWatch",
+            "AWS Systems Manager"
+        ],
+        "answer": "AWS Config",
+        "feedback": "Correto! AWS Config monitora e registra configurações de recursos AWS, permitindo avaliação de conformidade e alertas sobre mudanças."
+    },
+    {
+        "question": "Qual prática contribui para a sustentabilidade técnica ao projetar aplicações na AWS?",
+        "options": [
+            "Usar sempre as instâncias mais potentes",
+            "Implementar caching para reduzir processamento desnecessário",
+            "Evitar o uso de CDN",
+            "Manter dados apenas em uma região"
+        ],
+        "answer": "Implementar caching para reduzir processamento desnecessário",
+        "feedback": "Correto! Caching reduz a necessidade de processamento repetitivo, otimizando recursos e contribuindo para sustentabilidade."
+    },
+    {
+        "question": "Uma empresa multinacional precisa implementar um data lake com governança robusta. Qual combinação de serviços é mais apropriada?",
+        "options": [
+            "Amazon S3 + AWS Lake Formation",
+            "Amazon RDS + Amazon DynamoDB",
+            "Amazon EC2 + Amazon EBS",
+            "AWS Lambda + Amazon API Gateway"
+        ],
+        "answer": "Amazon S3 + AWS Lake Formation",
+        "feedback": "Correto! Amazon S3 fornece armazenamento escalável e AWS Lake Formation adiciona governança, segurança e descoberta de dados."
+    },
+    {
+        "question": "No AWS CAF, qual perspectiva se concentra em proteger dados e workloads na nuvem?",
+        "options": [
+            "Governance Perspective",
+            "Security Perspective",
+            "Platform Perspective",
+            "Operations Perspective"
+        ],
+        "answer": "Security Perspective",
+        "feedback": "Correto! A Security Perspective do AWS CAF foca em garantir que a organização atenda aos objetivos de segurança e conformidade."
+    },
+    {
+        "question": "Uma empresa quer implementar um sistema de backup que automaticamente mova dados antigos para classes de armazenamento mais econômicas. Qual recurso do S3 é mais adequado?",
+        "options": [
+            "S3 Transfer Acceleration",
+            "S3 Lifecycle Policies",
+            "S3 Cross-Region Replication",
+            "S3 Versioning"
+        ],
+        "answer": "S3 Lifecycle Policies",
+        "feedback": "Correto! S3 Lifecycle Policies automatizam a transição de objetos entre classes de armazenamento baseado em regras definidas."
+    },
+    {
+        "question": "Qual é um benefício chave da perspectiva 'Operations' no AWS CAF?",
+        "options": [
+            "Definir arquitetura de segurança",
+            "Estabelecer processos operacionais para suportar workloads na nuvem",
+            "Criar políticas de governança",
+            "Desenvolver habilidades técnicas"
+        ],
+        "answer": "Estabelecer processos operacionais para suportar workloads na nuvem",
+        "feedback": "Correto! A Operations Perspective foca em estabelecer processos operacionais eficazes para suportar workloads na nuvem."
+    },
+    {
+        "question": "Uma empresa precisa garantir que seus workloads sejam resilientes a falhas de região. Qual estratégia é mais robusta?",
+        "options": [
+            "Multi-AZ deployment",
+            "Multi-Region deployment",
+            "Single AZ com backup",
+            "Edge locations deployment"
+        ],
+        "answer": "Multi-Region deployment",
+        "feedback": "Correto! Multi-Region deployment fornece a maior resiliência, protegendo contra falhas de região inteira."
+    },
+    {
+        "question": "Qual serviço AWS ajuda a otimizar custos fornecendo recomendações baseadas em padrões de uso?",
+        "options": [
+            "AWS Budgets",
+            "AWS Cost Explorer",
+            "AWS Trusted Advisor",
+            "AWS Organizations"
+        ],
+        "answer": "AWS Trusted Advisor",
+        "feedback": "Correto! AWS Trusted Advisor fornece recomendações em tempo real para otimização de custos, performance, segurança e resiliência."
+    },
+    {
+        "question": "No contexto de sustentabilidade, qual benefício oferece o uso de serviços serverless como AWS Lambda?",
+        "options": [
+            "Maior controle sobre infraestrutura",
+            "Consumo de recursos apenas quando necessário",
+            "Custos fixos previsíveis",
+            "Maior latência de processamento"
+        ],
+        "answer": "Consumo de recursos apenas quando necessário",
+        "feedback": "Correto! Serviços serverless consomem recursos apenas durante a execução, eliminando desperdício de recursos ociosos."
+    },
+    {
+        "question": "Uma empresa precisa implementar controles de conformidade automatizados em todas as suas contas AWS. Qual serviço é mais adequado?",
+        "options": [
+            "AWS Config Rules",
+            "AWS CloudTrail",
+            "AWS Inspector",
+            "AWS Shield"
+        ],
+        "answer": "AWS Config Rules",
+        "feedback": "Correto! AWS Config Rules permite criar regras automatizadas para avaliar conformidade das configurações de recursos AWS."
+    },
+    {
+        "question": "Qual estratégia do AWS CAF envolve reprojetar aplicações para aproveitar plenamente os recursos nativos da nuvem?",
+        "options": [
+            "Rehost",
+            "Replatform",
+            "Refactor",
+            "Retain"
+        ],
+        "answer": "Refactor",
+        "feedback": "Correto! Refactor (ou Re-architect) envolve reprojetar aplicações para aproveitar recursos nativos da nuvem como auto-scaling e serverless."
+    },
+    {
+        "question": "Uma empresa quer implementar um programa de otimização contínua de custos. Qual combinação de práticas é mais eficaz?",
+        "options": [
+            "Usar apenas Reserved Instances",
+            "Monitoramento + Right-sizing + Reserved Instances + Spot Instances",
+            "Focar apenas em instâncias Spot",
+            "Evitar mudanças após deployment inicial"
+        ],
+        "answer": "Monitoramento + Right-sizing + Reserved Instances + Spot Instances",
+        "feedback": "Correto! Uma estratégia abrangente combina monitoramento contínuo, dimensionamento adequado e uso de diferentes modelos de preços."
+    },
+    {
+        "question": "No AWS CAF, qual é o foco principal da perspectiva 'Business'?",
+        "options": [
+            "Aspectos técnicos da migração",
+            "Garantir que investimentos em nuvem acelerem objetivos de negócio",
+            "Configuração de segurança",
+            "Operações diárias de TI"
+        ],
+        "answer": "Garantir que investimentos em nuvem acelerem objetivos de negócio",
+        "feedback": "Correto! A Business Perspective foca em alinhar investimentos em nuvem com objetivos e resultados de negócio."
+    },
+    {
+        "question": "Uma startup precisa de uma solução de banco de dados que escale automaticamente baseado na demanda. Qual serviço é mais adequado?",
+        "options": [
+            "Amazon RDS",
+            "Amazon DynamoDB",
+            "Amazon EC2 com MySQL",
+            "Amazon Redshift"
+        ],
+        "answer": "Amazon DynamoDB",
+        "feedback": "Correto! Amazon DynamoDB é um banco NoSQL totalmente gerenciado que escala automaticamente baseado na demanda."
+    },
+    {
+        "question": "Qual prática de sustentabilidade técnica envolve escolher a região AWS mais próxima aos usuários finais?",
+        "options": [
+            "Data locality",
+            "Resource optimization",
+            "Carbon footprint reduction",
+            "Cost optimization"
+        ],
+        "answer": "Carbon footprint reduction",
+        "feedback": "Correto! Escolher regiões próximas aos usuários reduz a latência de rede e o consumo energético para transmissão de dados."
+    },
+    {
+        "question": "Uma empresa precisa garantir que mudanças em recursos críticos sejam aprovadas antes da implementação. Qual serviço AWS oferece essa funcionalidade?",
+        "options": [
+            "AWS Config",
+            "AWS Systems Manager Change Calendar",
+            "AWS CloudFormation",
+            "AWS Service Catalog"
+        ],
+        "answer": "AWS Systems Manager Change Calendar",
+        "feedback": "Correto! AWS Systems Manager Change Calendar permite criar janelas de mudança aprovadas, bloqueando alterações em períodos críticos."
+    },
+    {
+        "question": "No contexto do AWS Well-Architected Framework, qual princípio de sustentabilidade envolve usar a menor quantidade de hardware para atender requisitos de negócio?",
+        "options": [
+            "Maximize utilization",
+            "Anticipate and adopt new hardware",
+            "Use managed services",
+            "Reduce downstream impact"
+        ],
+        "answer": "Maximize utilization",
+        "feedback": "Correto! Maximizar a utilização significa usar eficientemente os recursos disponíveis, reduzindo a necessidade de hardware adicional."
+    },
+    {
+        "question": "Uma empresa multinacional precisa implementar uma estratégia de disaster recovery econômica. Qual abordagem é mais cost-effective?",
+        "options": [
+            "Multi-site active/active",
+            "Warm standby",
+            "Pilot light",
+            "Cold backup"
+        ],
+        "answer": "Pilot light",
+        "feedback": "Correto! Pilot light mantém componentes críticos rodando em estado mínimo, oferecendo balance entre custo e tempo de recuperação."
+    },
+    {
+        "question": "Qual serviço AWS ajuda organizações a descobrir e classificar dados sensíveis automaticamente para fins de governança?",
+        "options": [
+            "AWS Config",
+            "Amazon Macie",
+            "AWS CloudTrail",
+            "AWS Inspector"
+        ],
+        "answer": "Amazon Macie",
+        "feedback": "Correto! Amazon Macie usa machine learning para descobrir, classificar e proteger dados sensíveis no Amazon S3."
+    },
+    {
+        "question": "No AWS CAF, qual fase envolve a execução do plano de transformação e entrega de value streams priorizados?",
+        "options": [
+            "Envision",
+            "Align",
+            "Launch",
+            "Scale"
+        ],
+        "answer": "Launch",
+        "feedback": "Correto! A fase Launch do AWS CAF foca na entrega de projetos piloto na produção para demonstrar valor incremental."
+    },
+    {
+        "question": "Uma empresa quer implementar uma arquitetura event-driven para reduzir coupling entre serviços. Qual serviço AWS é fundamental para isso?",
+        "options": [
+            "Amazon API Gateway",
+            "Amazon SQS",
+            "Amazon CloudFront",
+            "Amazon Route 53"
+        ],
+        "answer": "Amazon SQS",
+        "feedback": "Correto! Amazon SQS (Simple Queue Service) é fundamental para arquiteturas event-driven, fornecendo messaging assíncrono entre serviços."
+    },
+    {
+        "question": "Uma empresa quer garantir que todas as contas criadas estejam em conformidade com regras de segurança, rede e auditoria desde o primeiro dia. Qual solução AWS facilita esse processo?",
+        "options": [
+            "AWS Organizations",
+            "AWS Control Tower",
+            "AWS Config",
+            "AWS IAM"
+        ],
+        "answer": "AWS Control Tower",
+        "feedback": "Correto! AWS Control Tower facilita a criação de ambientes multi-conta seguros e em conformidade."
+    },
+    {
+        "question": "Uma empresa precisa aplicar uma política que proíbe o uso de serviços que não sejam PCI DSS. Como ela faz isso na AWS?",
+        "options": [
+            "IAM Policy",
+            "Service Control Policy (SCP)",
+            "VPC ACL",
+            "Security Group"
+        ],
+        "answer": "Service Control Policy (SCP)",
+        "feedback": "Correto! SCP permite restringir serviços em nível organizacional."
+    },
+    {
+        "question": "Qual prática de governança ajuda a garantir que workloads sejam implantados em regiões com menor pegada de carbono?",
+        "options": [
+            "Uso de Availability Zones",
+            "Escolha consciente de regiões",
+            "Uso de Auto Scaling",
+            "Uso de instâncias Spot"
+        ],
+        "answer": "Escolha consciente de regiões",
+        "feedback": "Correto! Escolher regiões com energia renovável ajuda na sustentabilidade."
+    },
+    {
+        "question": "Durante a migração para a AWS, um cliente deseja avaliar sua prontidão organizacional. Qual framework AWS é recomendado?",
+        "options": [
+            "AWS Well-Architected Framework",
+            "AWS Cloud Adoption Framework (CAF)",
+            "AWS Trusted Advisor",
+            "AWS Config"
+        ],
+        "answer": "AWS Cloud Adoption Framework (CAF)",
+        "feedback": "Correto! O AWS CAF avalia a prontidão para adoção da nuvem."
+    },
+    {
+        "question": "Seu cliente quer garantir que logs de atividades não sejam excluídos por acidente. Qual serviço usar?",
+        "options": [
+            "AWS CloudTrail com trilhas bloqueadas",
+            "AWS IAM",
+            "AWS Config",
+            "AWS KMS"
+        ],
+        "answer": "AWS CloudTrail com trilhas bloqueadas",
+        "feedback": "Correto! Habilitar a proteção contra exclusão nas trilhas do CloudTrail garante isso."
+    },
+    {
+        "question": "Uma startup quer evitar desperdício de recursos e manter a eficiência energética. Qual abordagem é recomendada?",
+        "options": [
+            "Executar instâncias EC2 On-Demand continuamente",
+            "Priorizar workloads serverless",
+            "Desabilitar Auto Scaling",
+            "Utilizar máquinas locais"
+        ],
+        "answer": "Priorizar workloads serverless",
+        "feedback": "Correto! Serverless é eficiente, escalável e reduz desperdício energético."
+    },
+    {
+        "question": "Qual pilar do AWS Cloud Adoption Framework (CAF) aborda cultura, treinamento e alinhamento de pessoas?",
+        "options": [
+            "Governance",
+            "People",
+            "Operations",
+            "Platform"
+        ],
+        "answer": "People",
+        "feedback": "Correto! O pilar People do AWS CAF foca em cultura organizacional e desenvolvimento de pessoas."
+    },
+    {
+        "question": "Uma empresa precisa garantir que todo bucket S3 novo tenha criptografia ativada. Qual serviço é usado?",
+        "options": [
+            "AWS Organizations",
+            "AWS Config com regras",
+            "AWS Shield",
+            "AWS IAM"
+        ],
+        "answer": "AWS Config com regras",
+        "feedback": "Correto! AWS Config monitora e garante conformidade de configurações como criptografia em buckets."
+    },
+    {
+        "question": "Seu cliente quer controlar quem pode criar VPCs e definir políticas globais sobre esse recurso. Qual usar?",
+        "options": [
+            "IAM Policy",
+            "Service Control Policy (SCP)",
+            "Security Group",
+            "VPC ACL"
+        ],
+        "answer": "Service Control Policy (SCP)",
+        "feedback": "Correto! SCP restringe a criação de VPCs entre contas na organização."
+    },
+    {
+        "question": "Qual ferramenta ajuda a criar um roteiro de adoção da nuvem baseado em práticas recomendadas?",
+        "options": [
+            "AWS Cloud Adoption Framework (CAF)",
+            "AWS Cost Explorer",
+            "AWS Trusted Advisor",
+            "AWS Control Tower"
+        ],
+        "answer": "AWS Cloud Adoption Framework (CAF)",
+        "feedback": "Correto! O AWS CAF oferece um roteiro estruturado para adoção da nuvem."
+    },
+    {
+        "question": "Uma empresa precisa aplicar políticas de segurança centralizadas em todas as contas AWS. Qual solução é mais adequada?",
+        "options": [
+            "IAM Policies",
+            "Service Control Policies (SCP) no AWS Organizations",
+            "Security Groups",
+            "NACLs"
+        ],
+        "answer": "Service Control Policies (SCP) no AWS Organizations",
+        "feedback": "Correto! SCPs permitem aplicar restrições em nível de conta dentro do Organizations."
+    },
+    {
+        "question": "Um cliente quer garantir que todas as contas filhas só possam criar instâncias em uma região específica. O que usar?",
+        "options": [
+            "IAM Policy",
+            "SCP restringindo regiões",
+            "CloudTrail",
+            "VPC Endpoint"
+        ],
+        "answer": "SCP restringindo regiões",
+        "feedback": "Correto! SCP pode limitar o uso de serviços a regiões específicas."
+    },
+    {
+        "question": "Durante uma auditoria de conformidade, a empresa precisa saber quais usuários executaram ações específicas nas últimas 24 horas. Qual serviço utilizar?",
+        "options": [
+            "AWS CloudTrail",
+            "Amazon CloudWatch",
+            "IAM",
+            "AWS Config"
+        ],
+        "answer": "AWS CloudTrail",
+        "feedback": "Correto! CloudTrail registra todas as chamadas de API para auditoria."
+    },
+    {
+        "question": "Para centralizar logs de múltiplas contas, o que é mais recomendado?",
+        "options": [
+            "Enviar logs para bucket S3 central",
+            "CloudTrail separado por conta",
+            "SNS em cada conta",
+            "Utilizar somente o Cost Explorer"
+        ],
+        "answer": "Enviar logs para bucket S3 central",
+        "feedback": "Correto! Centralizar logs em um único S3 facilita auditoria multi-conta."
+    },
+    {
+        "question": "Qual serviço permite automatizar a configuração de novas contas AWS seguindo padrões de governança?",
+        "options": [
+            "AWS Control Tower",
+            "CloudFormation",
+            "IAM Roles",
+            "Config"
+        ],
+        "answer": "AWS Control Tower",
+        "feedback": "Correto! Control Tower cria Landing Zones com governança automatizada."
+    },
+    {
+        "question": "Como aplicar o pilar de sustentabilidade ao dimensionar uma aplicação?",
+        "options": [
+            "Garantindo superprovisionamento de recursos",
+            "Usando recursos somente quando necessário (Auto Scaling)",
+            "Desabilitando logs",
+            "Usando apenas instâncias reservadas"
+        ],
+        "answer": "Usando recursos somente quando necessário (Auto Scaling)",
+        "feedback": "Correto! Dimensionamento automático evita desperdício de recursos."
+    },
+    {
+        "question": "Qual prática reduz o consumo de energia na AWS?",
+        "options": [
+            "Habilitar logging contínuo em todos os serviços",
+            "Utilizar instâncias Spot e Serverless",
+            "Manter instâncias ociosas",
+            "Desabilitar Auto Scaling"
+        ],
+        "answer": "Utilizar instâncias Spot e Serverless",
+        "feedback": "Correto! Spot e Serverless aumentam a eficiência energética."
+    },
+    {
+        "question": "Ao implementar o CAF, qual perspectiva trata de pessoas e cultura organizacional?",
+        "options": [
+            "Organizational Perspective",
+            "Business Perspective",
+            "People Perspective",
+            "Governance Perspective"
+        ],
+        "answer": "People Perspective",
+        "feedback": "Correto! People Perspective foca na transformação das equipes."
+    },
+    {
+        "question": "Dentro do CAF, qual perspectiva ajuda a definir KPIs e justificar o investimento em nuvem?",
+        "options": [
+            "Business Perspective",
+            "Security Perspective",
+            "Operations Perspective",
+            "Platform Perspective"
+        ],
+        "answer": "Business Perspective",
+        "feedback": "Correto! Business Perspective aborda os benefícios de negócio."
+    },
+    {
+        "question": "Ao migrar para AWS, qual perspectiva do CAF trata de governança, gerenciamento de riscos e compliance?",
+        "options": [
+            "Governance Perspective",
+            "People Perspective",
+            "Operations Perspective",
+            "Business Perspective"
+        ],
+        "answer": "Governance Perspective",
+        "feedback": "Correto! Essa perspectiva foca em governança, políticas e controles."
+    },
+    {
+        "question": "Cenário: Um cliente tem picos sazonais de uso. Qual abordagem reduz custos e garante escalabilidade?",
+        "options": [
+            "Usar instâncias On-Demand com Auto Scaling",
+            "Reservar capacidade fixa o ano todo",
+            "Desativar o Auto Scaling",
+            "Usar somente instâncias reservadas"
+        ],
+        "answer": "Usar instâncias On-Demand com Auto Scaling",
+        "feedback": "Correto! Auto Scaling com On-Demand lida melhor com variações sazonais."
+    },
+    {
+        "question": "Para garantir o uso de configurações padrão em todas as contas AWS, o que deve ser aplicado?",
+        "options": [
+            "AWS Config Rules",
+            "IAM Policy",
+            "CloudFront",
+            "Elastic Load Balancer"
+        ],
+        "answer": "AWS Config Rules",
+        "feedback": "Correto! AWS Config Rules garante conformidade de configurações."
+    },
+    {
+        "question": "Qual serviço AWS permite automatizar a criação de Landing Zones com governança pré-definida?",
+        "options": [
+            "AWS Control Tower",
+            "CloudFormation",
+            "AWS Service Catalog",
+            "AWS Budgets"
+        ],
+        "answer": "AWS Control Tower",
+        "feedback": "Correto! Control Tower cria Landing Zones prontas com governança."
+    },
+    {
+        "question": "Qual perspectiva do CAF foca na definição de arquitetura de aplicativos e serviços na nuvem?",
+        "options": [
+            "Platform Perspective",
+            "Security Perspective",
+            "Governance Perspective",
+            "Business Perspective"
+        ],
+        "answer": "Platform Perspective",
+        "feedback": "Correto! A Platform Perspective trata de design e arquitetura técnica."
+    },
+    {
+        "question": "Como uma empresa pode reduzir custos e também melhorar a sustentabilidade em workloads batch?",
+        "options": [
+            "Executando workloads em instâncias Spot",
+            "Executando workloads somente em horário comercial",
+            "Aumentando o número de instâncias",
+            "Desabilitando Auto Scaling"
+        ],
+        "answer": "Executando workloads em instâncias Spot",
+        "feedback": "Correto! Instâncias Spot reduzem custo e uso de energia."
+    },
+    {
+        "question": "Em um ambiente multi-conta, como evitar que usuários criem recursos fora do padrão da organização?",
+        "options": [
+            "Aplicar SCPs com restrições de serviço",
+            "Apenas com políticas IAM",
+            "Deixar a critério de cada conta",
+            "Não há como controlar"
+        ],
+        "answer": "Aplicar SCPs com restrições de serviço",
+        "feedback": "Correto! SCPs aplicam restrições globais por conta."
+    },
+    {
+        "question": "Qual prática recomendada ao projetar workloads sustentáveis na AWS?",
+        "options": [
+            "Utilizar instâncias menores e serverless quando possível",
+            "Superprovisionamento constante",
+            "Usar apenas instâncias EC2 grandes",
+            "Desabilitar escalabilidade automática"
+        ],
+        "answer": "Utilizar instâncias menores e serverless quando possível",
+        "feedback": "Correto! Serverless e dimensionamento eficiente reduzem consumo energético."
+    },
+    {
+        "question": "Qual ferramenta da AWS ajuda a visualizar custos futuros com base em uso atual?",
+        "options": [
+            "AWS Cost Explorer",
+            "AWS Artifact",
+            "CloudTrail",
+            "AWS IAM"
+        ],
+        "answer": "AWS Cost Explorer",
+        "feedback": "Correto! O Cost Explorer projeta custos com base no histórico de uso."
+    },
+    {
+        "question": "Qual recurso do AWS Organizations permite delegar gerenciamento de contas para unidades específicas da empresa?",
+        "options": [
+            "Organizational Units (OUs)",
+            "IAM Groups",
+            "AWS Config",
+            "AWS CloudTrail"
+        ],
+        "answer": "Organizational Units (OUs)",
+        "feedback": "Correto! As OUs permitem segmentar contas por áreas ou equipes."
+    },
+    {
+        "question": "Durante um projeto de migração, a equipe executiva pede um relatório dos ganhos financeiros da nuvem. Qual perspectiva do CAF atende isso?",
+        "options": [
+            "Business Perspective",
+            "Governance Perspective",
+            "People Perspective",
+            "Platform Perspective"
+        ],
+        "answer": "Business Perspective",
+        "feedback": "Correto! A Business Perspective foca nos benefícios financeiros da migração."
+    },
+    {
+        "question": "Um cliente deseja garantir que dados críticos sejam automaticamente replicados entre regiões para alta disponibilidade. Qual abordagem usar?",
+        "options": [
+            "S3 Cross-Region Replication",
+            "Elastic Load Balancer",
+            "CloudTrail",
+            "Auto Scaling"
+        ],
+        "answer": "S3 Cross-Region Replication",
+        "feedback": "Correto! S3 Cross-Region Replication replica objetos entre buckets em diferentes regiões."
+    },
+    {
+        "question": "Durante uma análise de sustentabilidade, qual serviço permite visualizar a pegada de carbono da sua conta AWS?",
+        "options": [
+            "AWS Cost Explorer",
+            "AWS Carbon Footprint Tool",
+            "AWS Budgets",
+            "AWS Config"
+        ],
+        "answer": "AWS Carbon Footprint Tool",
+        "feedback": "Correto! O Carbon Footprint Tool oferece dados sobre impacto ambiental do uso da nuvem."
+    },
+    {
+        "question": "No contexto do CAF, qual perspectiva trata da segurança de dados, gerenciamento de identidade e proteção?",
+        "options": [
+            "Security Perspective",
+            "Governance Perspective",
+            "Platform Perspective",
+            "Operations Perspective"
+        ],
+        "answer": "Security Perspective",
+        "feedback": "Correto! A Security Perspective aborda proteção de dados e gestão de identidade."
+    },
+    {
+        "question": "Uma startup deseja reduzir custos e ainda assim garantir conformidade e segurança. Qual abordagem usar?",
+        "options": [
+            "Manter workloads on-premises",
+            "Adotar workloads serverless com SCPs e AWS Config",
+            "Evitar o uso de SCP",
+            "Desabilitar criptografia"
+        ],
+        "answer": "Adotar workloads serverless com SCPs e AWS Config",
+        "feedback": "Correto! Serverless combinado com boas práticas de governança e conformidade reduz custos e garante segurança."
+    },
+    {
+        "question": "Para garantir que workloads sejam otimizados para performance e sustentabilidade, qual serviço é recomendado?",
+        "options": [
+            "AWS Compute Optimizer",
+            "AWS Config",
+            "AWS CloudTrail",
+            "AWS Artifact"
+        ],
+        "answer": "AWS Compute Optimizer",
+        "feedback": "Correto! Compute Optimizer sugere ajustes para melhorar eficiência e reduzir desperdícios."
+    },
+    {
+        "question": "Em um cenário de expansão global, uma empresa quer garantir governança consistente em todas as regiões. O que usar?",
+        "options": [
+            "AWS Organizations com SCP e Control Tower",
+            "CloudFront",
+            "VPC Peering",
+            "EC2 Auto Scaling"
+        ],
+        "answer": "AWS Organizations com SCP e Control Tower",
+        "feedback": "Correto! Essa combinação garante governança padronizada globalmente."
+    },
+    {
+        "question": "No CAF, qual perspectiva ajuda a garantir que operações na nuvem sejam eficientes, escaláveis e resilientes?",
+        "options": [
+            "Operations Perspective",
+            "Governance Perspective",
+            "People Perspective",
+            "Business Perspective"
+        ],
+        "answer": "Operations Perspective",
+        "feedback": "Correto! Essa perspectiva foca em operações eficientes e escaláveis."
+    },
+    {
+        "question": "Qual prática de sustentabilidade técnica ajuda a reduzir emissões de carbono em workloads de machine learning?",
+        "options": [
+            "Uso de instâncias sob demanda 24/7",
+            "Treinar modelos em regiões com maior uso de energia renovável",
+            "Aumentar o número de instâncias",
+            "Desabilitar auto scaling"
+        ],
+        "answer": "Treinar modelos em regiões com maior uso de energia renovável",
+        "feedback": "Correto! Escolher regiões sustentáveis reduz a pegada de carbono."
+    },
+    {
+        "question": "Para proteger dados sensíveis e garantir segurança em trânsito, o que é recomendado?",
+        "options": [
+            "Habilitar criptografia TLS/SSL",
+            "Desabilitar logs",
+            "Usar buckets públicos",
+            "Compartilhar credenciais por email"
+        ],
+        "answer": "Habilitar criptografia TLS/SSL",
+        "feedback": "Correto! TLS/SSL protege dados em trânsito."
+    },
+    {
+        "question": "Um cliente deseja garantir que workloads serverless estejam alinhados à governança da empresa. O que utilizar?",
+        "options": [
+            "SCP e AWS Config Rules",
+            "Security Groups",
+            "NACL",
+            "Elastic Load Balancer"
+        ],
+        "answer": "SCP e AWS Config Rules",
+        "feedback": "Correto! Essa combinação garante governança para workloads serverless."
+    },
+    {
+        "question": "Qual serviço AWS permite criar, treinar e implantar modelos de machine learning com rapidez?",
+        "options": [
+            "Amazon SageMaker",
+            "AWS Lambda",
+            "Amazon EC2",
+            "Amazon RDS"
+        ],
+        "answer": "Amazon SageMaker",
+        "feedback": "Correto! O Amazon SageMaker oferece uma plataforma gerenciada para desenvolvimento de machine learning."
+    },
+    {
+        "question": "Qual serviço da AWS fornece IA Generativa como serviço, incluindo modelos de linguagem e imagens?",
+        "options": [
+            "Amazon Bedrock",
+            "Amazon SageMaker",
+            "AWS Lambda",
+            "AWS CodeWhisperer"
+        ],
+        "answer": "Amazon Bedrock",
+        "feedback": "Correto! O Amazon Bedrock permite acessar modelos de IA Generativa sem gerenciar infraestrutura."
+    },
+    {
+        "question": "Qual pilar do Well-Architected Framework ajuda a reduzir impactos ambientais e melhorar a eficiência?",
+        "options": [
+            "Sustentabilidade",
+            "Confiabilidade",
+            "Eficiência de Desempenho",
+            "Segurança"
+        ],
+        "answer": "Sustentabilidade",
+        "feedback": "Correto! O pilar Sustentabilidade busca minimizar impactos ambientais e promover eficiência de longo prazo."
+    },
+    {
+        "question": "O que é o AWS Wavelength?",
+        "options": [
+            "Uma extensão da AWS para redes 5G",
+            "Uma região adicional",
+            "Um serviço de armazenamento",
+            "Um firewall gerenciado"
+        ],
+        "answer": "Uma extensão da AWS para redes 5G",
+        "feedback": "Correto! O AWS Wavelength leva serviços AWS para redes 5G, reduzindo latência em dispositivos móveis."
+    },
+    {
+        "question": "O que são AWS Local Zones?",
+        "options": [
+            "Extensões de regiões para baixa latência",
+            "Data centers privados",
+            "Regiões exclusivas para IA",
+            "Serviços de backup"
+        ],
+        "answer": "Extensões de regiões para baixa latência",
+        "feedback": "Correto! Local Zones trazem serviços AWS para mais perto dos usuários finais, reduzindo latência."
+    },
+    {
+        "question": "O AWS Outposts é usado para:",
+        "options": [
+            "Levar serviços AWS para data centers locais",
+            "Gerenciar certificados SSL",
+            "Entrega de conteúdo via CDN",
+            "Balanceamento de carga"
+        ],
+        "answer": "Levar serviços AWS para data centers locais",
+        "feedback": "Correto! O AWS Outposts permite executar serviços AWS no ambiente local do cliente."
+    },
+    {
+        "question": "Qual serviço da AWS permite gerar imagens, textos e outros conteúdos com IA Generativa?",
+        "options": [
+            "Amazon Bedrock",
+            "Amazon Lex",
+            "Amazon Rekognition",
+            "AWS Glue"
+        ],
+        "answer": "Amazon Bedrock",
+        "feedback": "Correto! Amazon Bedrock oferece acesso a modelos de IA Generativa de vários provedores."
+    },
+    {
+        "question": "No Cloud Adoption Framework (CAF), o pilar 'People' foca em:",
+        "options": [
+            "Habilidades, cultura e gerenciamento de mudanças",
+            "Custo e otimização",
+            "Segurança de rede",
+            "Desempenho de hardware"
+        ],
+        "answer": "Habilidades, cultura e gerenciamento de mudanças",
+        "feedback": "Correto! O pilar 'People' do CAF lida com as pessoas e processos necessários para adoção da nuvem."
+    },
+    {
+        "question": "Qual serviço AWS detecta anomalias de custo usando Machine Learning?",
+        "options": [
+            "AWS Cost Anomaly Detection",
+            "AWS Budgets",
+            "AWS Trusted Advisor",
+            "AWS Cost Explorer"
+        ],
+        "answer": "AWS Cost Anomaly Detection",
+        "feedback": "Correto! Esse serviço identifica padrões de gastos fora do comum automaticamente."
+    },
+    {
+        "question": "No AWS Cloud Adoption Framework (CAF), o pilar 'Governance' ajuda a:",
+        "options": [
+            "Definir políticas, controle financeiro e compliance",
+            "Gerenciar redes",
+            "Criar ambientes de desenvolvimento",
+            "Armazenar dados em S3"
+        ],
+        "answer": "Definir políticas, controle financeiro e compliance",
+        "feedback": "Correto! 'Governance' garante controle e gestão de riscos durante a jornada para a nuvem."
+    },
+    {
+        "question": "Qual vantagem a IA Generativa no Amazon Bedrock oferece?",
+        "options": [
+            "Uso de modelos de IA sem necessidade de gerenciar infraestrutura",
+            "Acesso a rede privada",
+            "Criação de máquinas virtuais",
+            "Armazenamento escalável"
+        ],
+        "answer": "Uso de modelos de IA sem necessidade de gerenciar infraestrutura",
+        "feedback": "Correto! Bedrock permite usar IA Generativa como serviço, sem configurar servidores ou modelos."
+    },
+    {
+        "question": "O AWS CAF ajuda organizações a:",
+        "options": [
+            "Planejar e gerenciar sua jornada para a nuvem",
+            "Aumentar a capacidade do EC2",
+            "Gerenciar backups locais",
+            "Reduzir latência via CDN"
+        ],
+        "answer": "Planejar e gerenciar sua jornada para a nuvem",
+        "feedback": "Correto! O AWS Cloud Adoption Framework (CAF) orienta a transformação para a nuvem de forma estruturada."
+    },
+    {
+        "question": "Ao utilizar Local Zones, a principal vantagem é:",
+        "options": [
+            "Redução de latência para cargas sensíveis",
+            "Aumento de armazenamento gratuito",
+            "Backup automático de instâncias",
+            "Acesso irrestrito à rede 5G"
+        ],
+        "answer": "Redução de latência para cargas sensíveis",
+        "feedback": "Correto! Local Zones trazem recursos AWS mais próximos do usuário final, reduzindo a latência."
+    },
+    {
+        "question": "O pilar de Sustentabilidade recomenda:",
+        "options": [
+            "Escolher regiões com menor impacto ambiental",
+            "Reduzir logs de auditoria",
+            "Desabilitar backups",
+            "Aumentar o uso de servidores dedicados"
+        ],
+        "answer": "Escolher regiões com menor impacto ambiental",
+        "feedback": "Correto! Escolher regiões eficientes energeticamente é uma prática de sustentabilidade na nuvem."
+    },
+    {
+        "question": "Qual serviço da AWS oferece modelos de IA generativa de diferentes provedores?",
+        "options": [
+            "Amazon Bedrock",
+            "Amazon SageMaker",
+            "AWS DeepLens",
+            "Amazon Polly"
+        ],
+        "answer": "Amazon Bedrock",
+        "feedback": "Correto! O Amazon Bedrock dá acesso a modelos como Anthropic, Stability AI, AI21 Labs e Amazon Titan."
+    },
+    {
+        "question": "O AWS Outposts é ideal para empresas que precisam de:",
+        "options": [
+            "Manter parte dos dados e workloads on-premises",
+            "Gerenciar filas de mensagens",
+            "Executar funções sem servidor",
+            "Criar buckets públicos"
+        ],
+        "answer": "Manter parte dos dados e workloads on-premises",
+        "feedback": "Correto! AWS Outposts permite executar serviços AWS fisicamente no local do cliente."
+    },
+    {
+        "question": "No CAF, o pilar 'Operations' tem como objetivo:",
+        "options": [
+            "Garantir operações eficientes e resilientes na nuvem",
+            "Controlar custos com instâncias EC2",
+            "Configurar chaves de criptografia",
+            "Definir roteamento de rede"
+        ],
+        "answer": "Garantir operações eficientes e resilientes na nuvem",
+        "feedback": "Correto! 'Operations' trata de como gerenciar e operar workloads na nuvem de forma eficiente."
+    },
+    {
+        "question": "Qual benefício o AWS Wavelength proporciona?",
+        "options": [
+            "Reduz latência em aplicações móveis via redes 5G",
+            "Aumenta o armazenamento do S3",
+            "Cria backups automáticos",
+            "Permite acessar APIs privadas"
+        ],
+        "answer": "Reduz latência em aplicações móveis via redes 5G",
+        "feedback": "Correto! AWS Wavelength leva serviços AWS até a borda da rede 5G, reduzindo a latência."
+    },
+    {
+        "question": "Qual serviço AWS permite gerar insights usando IA para identificar problemas operacionais?",
+        "options": [
+            "Amazon DevOps Guru",
+            "AWS Trusted Advisor",
+            "AWS Cost Explorer",
+            "AWS Artifact"
+        ],
+        "answer": "Amazon DevOps Guru",
+        "feedback": "Correto! O Amazon DevOps Guru usa machine learning para detectar anomalias e problemas operacionais."
+    },
+    {
+        "question": "Uma prática recomendada no pilar de Sustentabilidade é:",
+        "options": [
+            "Desligar recursos não utilizados",
+            "Aumentar logs de auditoria",
+            "Usar instâncias dedicadas sempre",
+            "Desabilitar balanceamento de carga"
+        ],
+        "answer": "Desligar recursos não utilizados",
+        "feedback": "Correto! Desligar recursos quando não estão em uso reduz consumo de energia e custos."
+    },
+    {
+        "question": "No AWS Well-Architected Framework, qual ação ajuda na sustentabilidade?",
+        "options": [
+            "Desligar recursos ociosos",
+            "Aumentar uso de instâncias dedicadas",
+            "Executar cargas na região mais cara",
+            "Evitar uso de Auto Scaling"
+        ],
+        "answer": "Desligar recursos ociosos",
+        "feedback": "Correto! Desligar recursos não utilizados reduz o consumo de energia e promove sustentabilidade."
+    },
+    {
+        "question": "O que o pilar de Sustentabilidade incentiva na AWS?",
+        "options": [
+            "Uso eficiente de recursos",
+            "Desabilitar backups",
+            "Usar instâncias sempre ligadas",
+            "Evitar regiões sustentáveis"
+        ],
+        "answer": "Uso eficiente de recursos",
+        "feedback": "Correto! A sustentabilidade busca maximizar a eficiência e minimizar o impacto ambiental."
+    },
+    {
+        "question": "Escolher regiões com menor pegada de carbono é uma prática de qual pilar?",
+        "options": [
+            "Sustentabilidade",
+            "Segurança",
+            "Otimização de Custos",
+            "Confiabilidade"
+        ],
+        "answer": "Sustentabilidade",
+        "feedback": "Correto! O pilar de Sustentabilidade considera o uso de regiões com menor emissão de carbono."
+    },
+    {
+        "question": "No AWS CAF, qual perspectiva foca em cultura organizacional e desenvolvimento de habilidades?",
+        "options": [
+            "Pessoas (People)",
+            "Governança (Governance)",
+            "Negócios (Business)",
+            "Plataforma (Platform)"
+        ],
+        "answer": "Pessoas (People)",
+        "feedback": "Correto! A perspectiva de Pessoas trata da cultura, habilidades e capacitação para adoção da nuvem."
+    },
+    {
+        "question": "O AWS CAF possui quantas perspectivas?",
+        "options": [
+            "6",
+            "4",
+            "3",
+            "8"
+        ],
+        "answer": "6",
+        "feedback": "Correto! O Cloud Adoption Framework (CAF) possui 6 perspectivas: People, Governance, Platform, Security, Operations e Business."
+    },
+    {
+        "question": "Na perspectiva 'Governança' do AWS CAF, o foco é:",
+        "options": [
+            "Gerenciar riscos e compliance",
+            "Executar cargas de trabalho",
+            "Gerenciar redes virtuais",
+            "Monitorar logs"
+        ],
+        "answer": "Gerenciar riscos e compliance",
+        "feedback": "Correto! A perspectiva de Governança trata de controle financeiro, compliance, segurança e gestão de riscos."
+    },
+    {
+        "question": "Qual prática contribui para sustentabilidade na AWS?",
+        "options": [
+            "Usar Auto Scaling para adaptar recursos",
+            "Executar servidores 24/7 mesmo sem uso",
+            "Desabilitar monitoramento",
+            "Escolher regiões com maior latência"
+        ],
+        "answer": "Usar Auto Scaling para adaptar recursos",
+        "feedback": "Correto! Auto Scaling permite ajustar recursos dinamicamente, reduzindo desperdícios e consumo energético."
+    },
+    {
+        "question": "No AWS CAF, a perspectiva 'Operations' trata de:",
+        "options": [
+            "Gerenciar e operar cargas na nuvem",
+            "Criar modelos de IA",
+            "Proteger contra DDoS",
+            "Gerenciar redes físicas"
+        ],
+        "answer": "Gerenciar e operar cargas na nuvem",
+        "feedback": "Correto! Operations foca em garantir que workloads na nuvem sejam operados de forma eficiente e resiliente."
+    },
+    {
+        "question": "Escolher instâncias Graviton em vez de x86 pode contribuir com:",
+        "options": [
+            "Maior eficiência energética",
+            "Maior emissão de carbono",
+            "Maior custo operacional",
+            "Redução da escalabilidade"
+        ],
+        "answer": "Maior eficiência energética",
+        "feedback": "Correto! Instâncias Graviton são otimizadas para eficiência energética, alinhadas ao pilar de Sustentabilidade."
+    },
+    {
+        "question": "Qual benefício principal o AWS CAF oferece?",
+        "options": [
+            "Ajudar na jornada de adoção da nuvem",
+            "Reduzir preços de instâncias",
+            "Aumentar latência para segurança",
+            "Eliminar a necessidade de backups"
+        ],
+        "answer": "Ajudar na jornada de adoção da nuvem",
+        "feedback": "Correto! O AWS CAF orienta empresas a planejar, adotar e operar na nuvem com segurança e eficiência."
     }
 ]
