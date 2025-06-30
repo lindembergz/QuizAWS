@@ -1,7 +1,3 @@
-Claro, Lindemberg! Como o repositório ainda não possui um README detalhado, aqui está uma sugestão de conteúdo que você pode usar para apresentar melhor o projeto **QuizAWS**:
-
----
-
 # QuizAWS
 
 🎯 **QuizAWS** é um projeto de quiz interativo com foco em serviços da Amazon Web Services (AWS). Ideal para quem está se preparando para certificações como o AWS Cloud Practitioner ou deseja testar seus conhecimentos na nuvem da AWS de forma prática e divertida.
