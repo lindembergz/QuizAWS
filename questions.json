@@ -4811,7 +4811,7 @@
       "C. AWS Shield",
       "D. AWS Shield Advanced"
     ],
-    "answer": "C. AWS Shield, D. AWS Shield Advanced",
+    "answer": ["C. AWS Shield", "D. AWS Shield Advanced"],
     "feedback": "AWS Shield e Shield Advanced protegem contra ataques DDoS. [https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html]",
     "category": "Segurança e Conformidade"
   },
@@ -4967,7 +4967,7 @@
       "C. AWS Lambda",
       "D. Amazon CloudWatch"
     ],
-    "answer": "A. Email, C. AWS Lambda",
+    "answer": ["A. Email", "C. AWS Lambda"],
     "feedback": "Email e AWS Lambda podem ser assinantes de tópicos SNS. [https://aws.amazon.com/sns/]",
     "category": "Tecnologia e Serviços de Nuvem"
   },
@@ -5184,7 +5184,7 @@
       "D. Armazenamento em S3 Glacier.",
       "E. Transferência de dados de saída de S3."
     ],
-    "answer": "B. Solicitações de transição de ciclo de vida., E. Transferência de dados de saída de S3.",
+    "answer": ["B. Solicitações de transição de ciclo de vida.", "E. Transferência de dados de saída de S3."],
     "feedback": "Custos do S3 incluem transições de ciclo de vida e transferências de saída. [https://aws.amazon.com/s3/pricing/]",
     "category": "Faturamento, Preços e Suporte"
   },
@@ -5211,7 +5211,209 @@
     "answer": "B. Ideal para cargas de trabalho imprevisíveis.",
     "feedback": "O modelo Sob Demanda é flexível para cargas variáveis sem compromissos. [https://quizlet.com/515175403/aws-certified-cloud-practitioner-exam-billing-and-pricing-flash-cards/]",
     "category": "Faturamento, Preços e Suporte"
+  },
+  {
+    "question": "Um time de desenvolvimento detectou baixo desempenho em um banco de dados relacional. A concorrência entre um alto volume de consultas e outras operações no banco de dados tem elevado a latência no tráfego de dados.\n\nQual é a abordagem mais eficiente e econômica para solucionar esse problema?",
+    "options": [
+      "Substituir o RDS pelo Dynamo",
+      "Fazer o uso de Read Replicas",
+      "Criar novas instâncias do RDS em outra zona de disponibilidade.",
+      "Atualizar a role de acesso ao banco"
+    ],
+    "answer": ["Fazer o uso de Read Replicas"],
+    "feedback": "Correto! Usar Read Replicas melhora o desempenho de leitura, reduzindo a latência sem custos excessivos.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Após concluir os testes, homologações e implantação de uma aplicação, usuários relatam a impossibilidade de acessá-la em ambiente de produção. Na log do CloudWatch, uma mensagem de erro indica que a função Lambda enfrentou negação de acesso ao DynamoDB.\n\nQual serviço precisa ser configurado para resolver este problema em produção?",
+    "options": [
+      "AWS Cognito",
+      "AWS Config",
+      "AWS CloudWatch",
+      "AWS IAM roles"
+    ],
+    "answer": ["AWS IAM roles"],
+    "feedback": "Correto! Configurar as IAM roles corretamente permite que a função Lambda acesse o DynamoDB.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Uma startup necessita realizar a implementação do armazenamento e sincronização de dados de uma aplicação entre diversos dispositivos móveis e interfaces web.\n\nQual serviço da AWS pode ser empregado para atender a essa necessidade?",
+    "options": [
+      "AWS DynamoDB",
+      "AWS Redis",
+      "AWS ElastiCache",
+      "AWS Cognito"
+    ],
+    "answer": ["AWS Cognito"],
+    "feedback": "Correto! AWS Cognito é ideal para autenticação e sincronização de dados entre dispositivos.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Uma das formas de garantir a elasticidade e economia no uso do EC2 é mantendo os arquivos de programas e de sistemas em serviços de armazenamento anexados a instâncias.\n\nQual serviço pode ser utilizado para isso?",
+    "options": [
+      "EBS",
+      "Git",
+      "CodeCommit",
+      "S3"
+    ],
+    "answer": ["EBS"],
+    "feedback": "Correto! EBS é o serviço de armazenamento em bloco ideal para instâncias EC2.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Qual é o modelo de utilização de nuvem em que não é necessário se preocupar com o gerenciamento dos recursos de infraestrutura tecnológica, permitindo que o foco do cliente esteja principalmente no desenvolvimento das aplicações que serão executadas sobre esses recursos?",
+    "options": [
+      "BaaS",
+      "IaaS",
+      "SaaS",
+      "PaaS"
+    ],
+    "answer": ["PaaS"],
+    "feedback": "Correto! PaaS abstrai a infraestrutura, focando no desenvolvimento de aplicações.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Recentemente, uma empresa passou por uma auditoria e recebeu autuações devido à exposição de arquivos contendo dados sensíveis de clientes em buckets do S3, representando riscos de vazamento de informações e prejudicando a imagem da empresa.\n\nQual serviço da AWS pode ser empregado para monitorar dados e prevenir ocorrências desse tipo?",
+    "options": [
+      "AWS Sensitive",
+      "AWS GuardDuty",
+      "AWS Keys Management Service (KMS)",
+      "AWS Macie"
+    ],
+    "answer": ["AWS Macie"],
+    "feedback": "Correto! AWS Macie monitora e protege dados sensíveis em buckets S3.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Pergunta 5\nIgnorado\nQual é a plataforma da AWS para Big Data em Cloud que permite integração com várias ferramentas de código livre como Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi?",
+    "options": [
+      "Amazon Hadoop",
+      "Amazon Kinesis",
+      "Amazon RedShift",
+      "Amazon EMR"
+    ],
+    "answer": ["Amazon EMR"],
+    "feedback": "Correto! Amazon EMR é a plataforma ideal para Big Data com integração a ferramentas open-source.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Qual é o serviço, que através da infraestrutura global da AWS, pode ser utilizado quando as suas aplicações apresentarem problemas de tráfego devido ao congestionamento da Internet?",
+    "options": [
+      "AWS Snowball",
+      "AWS CloudFront",
+      "AWS Global Accelerator",
+      "AWS DataSync"
+    ],
+    "answer": ["AWS Global Accelerator"],
+    "feedback": "Correto! AWS Global Accelerator otimiza o tráfego usando a infraestrutura global da AWS.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Qual é a melhor opção para salvar arquivos com pouca necessidade de uso?",
+    "options": [
+      "EC2",
+      "DynamoDb",
+      "S3 Standard",
+      "S3 Glacier"
+    ],
+    "answer": ["S3 Glacier"],
+    "feedback": "Correto! S3 Glacier é projetado para armazenamento de arquivos de baixo acesso a custo reduzido.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Qual é a principal função do Security Group?",
+    "options": [
+      "É servir como uma espécie de firewall para controlar a autorização do tráfego de entrada e saída de máquinas EC2 que estejam associados a ele.",
+      "É proteger os data centers físicos da AWS",
+      "É servir apenas para agrupar recursos dentro de uma rede privada",
+      "É proteger a infraestrutura global da AWS de ataques de hackers"
+    ],
+    "answer": ["É servir como uma espécie de firewall para controlar a autorização do tráfego de entrada e saída de máquinas EC2 que estejam associados a ele."],
+    "feedback": "Correto! O Security Group atua como firewall para controle de tráfego em instâncias EC2.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Um usuário implanta uma instância de banco de dados do Amazon RDS e deseja automatizar a implantação de código para o banco de dados, permitindo que os desenvolvedores façam atualizações frequentes.\n\nQual serviço da AWS deve ser usado para atingir esse objetivo?",
+    "options": [
+      "AWS CodeDeploy",
+      "AWS CodePipeline",
+      "AWS CodeArtifact",
+      "AWS CodeBuild"
+    ],
+    "answer": ["AWS CodePipeline"],
+    "feedback": "Correto! AWS CodePipeline automatiza o fluxo de implantação de código para o RDS.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Uma empresa necessita de um banco de dados relacional na AWS que registre os pedidos de novos clientes em um site.\n\nQual serviço ou recurso da AWS atenderá a esse requisito?",
+    "options": [
+      "Amazon Aurora",
+      "Amazon EBS",
+      "Amazon DynamoDB",
+      "AWS global Accelerator"
+    ],
+    "answer": ["Amazon Aurora"],
+    "feedback": "Correto! Amazon Aurora é um banco de dados relacional ideal para registrar pedidos.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Cada departamento de uma empresa tem sua própria conta independente da AWS e seu próprio método de pagamento. A empresa precisa centralizar a governança departamental e consolidar pagamentos.\n\nComo a empresa pode atingir esses objetivos usando serviços ou recursos da AWS?",
+    "options": [
+      "Criando uma organização no AWS Organizations com todos os recursos habilitados em uma conta. Convidando todas as contas para ingressar na organização.",
+      "Usando o AWS Systems Manager OpsCenter.",
+      "Usando a página AWS Cost and Usage Reports do Console do AWS Billing and Cost Management.",
+      "Usando o AWS Cloud Map em cada conta departamental."
+    ],
+    "answer": ["Criando uma organização no AWS Organizations com todos os recursos habilitados em uma conta. Convidando todas as contas para ingressar na organização."],
+    "feedback": "Correto! AWS Organizations centraliza governança e pagamentos entre contas.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Qual serviço da AWS permite que os clientes comprem capacidade não utilizada do Amazon EC2 a uma taxa com desconto frequente?",
+    "options": [
+      "Instâncias dedicadas",
+      "Instâncias sob demanda",
+      "Spot Instances",
+      "Instâncias reservadas"
+    ],
+    "answer": ["Spot Instances"],
+    "feedback": "Correto! Spot Instances oferecem capacidade não utilizada a preços reduzidos.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Qual é o plano MÍNIMO do AWS Support que fornece suporte técnico por meio de chamadas telefônicas?",
+    "options": [
+      "Basic",
+      "Desenvolvedor",
+      "Enterprise",
+      "Business"
+    ],
+    "answer": ["Business"],
+    "feedback": "Correto! O plano Business é o mínimo que oferece suporte por telefone.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Uma empresa quer estabelecer uma conexão consistente e privada do data center on-premises da empresa com a nuvem AWS.\n\nQual serviço da AWS atenderá a esses requisitos?",
+    "options": [
+      "AWS Site-to-Site VPN",
+      "AWS Client VPN",
+      "Amazon Connect",
+      "AWS Direct Connect"
+    ],
+    "answer": ["AWS Direct Connect"],
+    "feedback": "Correto! AWS Direct Connect fornece uma conexão privada e consistente com a AWS.",
+    "category": "Tecnologia e Serviços de Nuvem"
+  },
+  {
+    "question": "Uma empresa está hospedando um site estático em um único bucket do Amazon S3.\n\nQual serviço da AWS alcançará menor latência e altas velocidades de transferência?",
+    "options": [
+      "Amazon DynamoDB Accelerator (DAX)",
+      "Amazon CloudFront",
+      "AWS Elastic Beanstalk",
+      "AWS Elastic Beanstalk"
+    ],
+    "answer": ["Amazon CloudFront"],
+    "feedback": "Correto! Amazon CloudFront reduz latência e melhora a entrega de conteúdo estático.",
+    "category": "Tecnologia e Serviços de Nuvem"
   }
-    
-
 ]

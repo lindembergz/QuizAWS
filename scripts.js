@@ -133,27 +133,119 @@ function updateProgressBar() {
     progressBar.textContent = `${Math.round(progress)}%`;
 }
 
+let selectedOptions = [];
+
 function loadQuestion() {
     if (currentQuestionIndex >= questions.length) {
-        alert("acabou")
         showResult();
         return;
     }
     const q = questions[currentQuestionIndex];
     questionEl.textContent = q.question;
     optionsEl.innerHTML = '';
+    selectedOptions = []; // Resetar seleções ao carregar nova questão
     q.options.forEach((option, index) => {
         const div = document.createElement('div');
         div.classList.add('option');
         div.textContent = `${String.fromCharCode(65 + index)}) ${option}`;
-        div.onclick = () => handleAnswer(option);
+        div.onclick = () => handleOptionClick(option, div); // Nova função para clique
         optionsEl.appendChild(div);
     });
     feedbackEl.textContent = '';
     nextBtn.style.display = 'none';
-  	updateProgressBar();
+    updateProgressBar();
 }
 
+function handleOptionClick(selected, element) {
+    const q = questions[currentQuestionIndex];
+    const isMultipleAnswer = Array.isArray(q.answer); // Verifica se é múltipla resposta
+    const options = optionsEl.querySelectorAll('.option');
+
+    if (isMultipleAnswer) {
+        // Lógica para múltiplas respostas
+        if (selectedOptions.includes(selected)) {
+            // Desmarcar se já selecionado
+            selectedOptions = selectedOptions.filter(opt => opt !== selected);
+            element.classList.remove('selected');
+        } else {
+            // Adicionar nova seleção
+            selectedOptions.push(selected);
+            element.classList.add('selected');
+        }
+
+        // Verificar se o número de seleções é igual ao número de respostas corretas
+        if (selectedOptions.length === q.answer.length) {
+            handleMultipleAnswer(selectedOptions);
+        } else {
+            // Destacar seleções parciais em cinza
+            options.forEach(opt => {
+                if (selectedOptions.some(sel => opt.textContent.includes(sel))) {
+                    opt.classList.add('selected');
+                } else {
+                    opt.classList.remove('selected', 'correct', 'incorrect');
+                }
+            });
+            feedbackEl.textContent = `Selecione ${q.answer.length} resposta${q.answer.length > 1 ? 's' : ''}.`;
+            feedbackEl.style.color = '#6b7280'; // Cor cinza para feedback
+            nextBtn.style.display = 'none';
+        }
+    } else {
+        // Lógica para resposta única (mantida como está)
+        handleAnswer(selected);
+    }
+}
+
+function handleMultipleAnswer(selected) {
+    const q = questions[currentQuestionIndex];
+    const options = optionsEl.querySelectorAll('.option');
+
+    // Desativar cliques após avaliação
+    options.forEach(opt => {
+        opt.onclick = null;
+    });
+
+    // Verificar se todas as seleções estão corretas
+    const isCorrect = selected.length === q.answer.length &&
+        selected.every(sel => q.answer.includes(sel));
+
+    // Aplicar estilos às opções
+    options.forEach(opt => {
+        const optionText = opt.textContent.slice(2); // Remover "A) " ou similar
+        if (q.answer.includes(optionText)) {
+            opt.classList.add('correct');
+        }
+        if (selected.includes(optionText) && !q.answer.includes(optionText)) {
+            opt.classList.add('incorrect');
+        }
+    });
+
+    if (isCorrect) {
+        totalCorrect++;
+        correctStreak++;
+        incorrectStreak = 0;
+        if (correctStreak === 5) {
+            yesSSSSound.play().catch(e => console.log("Erro ao reproduzir som de YESSSS:", e));
+        } else {
+            correctSound.play().catch(e => console.log("Erro ao reproduzir som de acerto:", e));
+        }
+        feedbackEl.textContent = q.feedback;
+        feedbackEl.style.color = '#22c55e';
+    } else {
+        incorrectStreak++;
+        correctStreak = 0;
+        if (incorrectStreak === 2) {
+            ohNooooSound.play().catch(e => console.log("Erro ao reproduzir som de Oh, noooo:", e));
+        }
+        feedbackEl.textContent = `Ops! As respostas corretas são ${q.answer.join(' e ')}. ${q.feedback}`;
+        feedbackEl.style.color = '#ef4444';
+        incorrectSound.play().catch(e => console.log("Erro ao reproduzir som de erro:", e));
+    }
+
+    scoreEl.textContent = totalCorrect;
+    nextBtn.style.display = 'block';
+}
+
+// A função handleAnswer original permanece para questões de resposta única
 function handleAnswer(selected) {
     const q = questions[currentQuestionIndex];
     const options = optionsEl.querySelectorAll('.option');
@@ -173,11 +265,11 @@ function handleAnswer(selected) {
         incorrectStreak = 0;
         if (correctStreak === 5) {
             yesSSSSound.play().catch(e => console.log("Erro ao reproduzir som de YESSSS:", e));
+        } else {
+            correctSound.play().catch(e => console.log("Erro ao reproduzir som de acerto:", e));
         }
-		else correctSound.play().catch(e => console.log("Erro ao reproduzir som de acerto:", e));
         feedbackEl.textContent = q.feedback;
         feedbackEl.style.color = '#22c55e';
-        
     } else {
         incorrectStreak++;
         correctStreak = 0;
@@ -191,6 +283,8 @@ function handleAnswer(selected) {
     scoreEl.textContent = totalCorrect;
     nextBtn.style.display = 'block';
 }
+
+
 
 function showResult() {
       stopTimer();

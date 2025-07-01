@@ -100,3 +100,8 @@ body {
             line-height: 20px;
             font-size: 0.9em;
         }
+
+        .option.selected {
+    background-color: #d1d5db; /* Cor cinza para seleções parciais */
+    border: 2px solid #6b7280;
+}
